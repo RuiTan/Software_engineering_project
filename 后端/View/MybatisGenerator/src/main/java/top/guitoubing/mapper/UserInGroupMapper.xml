@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.guitoubing.mapper.UserInGroupMapper">
+  <resultMap id="BaseResultMap" type="top.guitoubing.pojo.UserInGroup">
+    <constructor>
+      <idArg column="USERID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <idArg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="STAUTS_" javaType="java.lang.Short" jdbcType="DECIMAL" />
+      <arg column="AUTHORITY_" javaType="java.lang.Short" jdbcType="DECIMAL" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    USERID_, GROUPID_, STAUTS_, AUTHORITY_
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="top.guitoubing.pojo.UserInGroupKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from USERINGROUP_
+    where USERID_ = #{userid,jdbcType=DECIMAL}
+      and GROUPID_ = #{groupid,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="top.guitoubing.pojo.UserInGroupKey">
+    delete from USERINGROUP_
+    where USERID_ = #{userid,jdbcType=DECIMAL}
+      and GROUPID_ = #{groupid,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="top.guitoubing.pojo.UserInGroup">
+    insert into USERINGROUP_ (USERID_, GROUPID_, STAUTS_, 
+      AUTHORITY_)
+    values (#{userid,jdbcType=DECIMAL}, #{groupid,jdbcType=DECIMAL}, #{stauts,jdbcType=DECIMAL}, 
+      #{authority,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="top.guitoubing.pojo.UserInGroup">
+    insert into USERINGROUP_
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        USERID_,
+      </if>
+      <if test="groupid != null">
+        GROUPID_,
+      </if>
+      <if test="stauts != null">
+        STAUTS_,
+      </if>
+      <if test="authority != null">
+        AUTHORITY_,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        #{userid,jdbcType=DECIMAL},
+      </if>
+      <if test="groupid != null">
+        #{groupid,jdbcType=DECIMAL},
+      </if>
+      <if test="stauts != null">
+        #{stauts,jdbcType=DECIMAL},
+      </if>
+      <if test="authority != null">
+        #{authority,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="top.guitoubing.pojo.UserInGroup">
+    update USERINGROUP_
+    <set>
+      <if test="stauts != null">
+        STAUTS_ = #{stauts,jdbcType=DECIMAL},
+      </if>
+      <if test="authority != null">
+        AUTHORITY_ = #{authority,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where USERID_ = #{userid,jdbcType=DECIMAL}
+      and GROUPID_ = #{groupid,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="top.guitoubing.pojo.UserInGroup">
+    update USERINGROUP_
+    set STAUTS_ = #{stauts,jdbcType=DECIMAL},
+      AUTHORITY_ = #{authority,jdbcType=DECIMAL}
+    where USERID_ = #{userid,jdbcType=DECIMAL}
+      and GROUPID_ = #{groupid,jdbcType=DECIMAL}
+  </update>
+</mapper>

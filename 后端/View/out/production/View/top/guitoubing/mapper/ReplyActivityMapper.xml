@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.guitoubing.mapper.ReplyActivityMapper">
+  <resultMap id="BaseResultMap" type="top.guitoubing.pojo.ReplyActivity">
+    <constructor>
+      <idArg column="USERID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <idArg column="ACTIVITYID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="TYPE_" javaType="java.lang.Short" jdbcType="DECIMAL" />
+      <arg column="CONTENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    USERID_, ACTIVITYID_, TYPE_, CONTENT_
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="top.guitoubing.pojo.ReplyActivityKey" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from REPLYACTIVITY_
+    where USERID_ = #{userid,jdbcType=DECIMAL}
+      and ACTIVITYID_ = #{activityid,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="top.guitoubing.pojo.ReplyActivityKey">
+    delete from REPLYACTIVITY_
+    where USERID_ = #{userid,jdbcType=DECIMAL}
+      and ACTIVITYID_ = #{activityid,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="top.guitoubing.pojo.ReplyActivity">
+    insert into REPLYACTIVITY_ (USERID_, ACTIVITYID_, TYPE_, 
+      CONTENT_)
+    values (#{userid,jdbcType=DECIMAL}, #{activityid,jdbcType=DECIMAL}, #{type,jdbcType=DECIMAL}, 
+      #{content,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="top.guitoubing.pojo.ReplyActivity">
+    insert into REPLYACTIVITY_
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        USERID_,
+      </if>
+      <if test="activityid != null">
+        ACTIVITYID_,
+      </if>
+      <if test="type != null">
+        TYPE_,
+      </if>
+      <if test="content != null">
+        CONTENT_,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userid != null">
+        #{userid,jdbcType=DECIMAL},
+      </if>
+      <if test="activityid != null">
+        #{activityid,jdbcType=DECIMAL},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=DECIMAL},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="top.guitoubing.pojo.ReplyActivity">
+    update REPLYACTIVITY_
+    <set>
+      <if test="type != null">
+        TYPE_ = #{type,jdbcType=DECIMAL},
+      </if>
+      <if test="content != null">
+        CONTENT_ = #{content,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where USERID_ = #{userid,jdbcType=DECIMAL}
+      and ACTIVITYID_ = #{activityid,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="top.guitoubing.pojo.ReplyActivity">
+    update REPLYACTIVITY_
+    set TYPE_ = #{type,jdbcType=DECIMAL},
+      CONTENT_ = #{content,jdbcType=VARCHAR}
+    where USERID_ = #{userid,jdbcType=DECIMAL}
+      and ACTIVITYID_ = #{activityid,jdbcType=DECIMAL}
+  </update>
+</mapper>

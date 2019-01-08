@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.guitoubing.mapper.GroupActivityMapper">
+  <resultMap id="BaseResultMap" type="top.guitoubing.pojo.GroupActivity">
+    <constructor>
+      <idArg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="TITLE_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CONTENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="STARTDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="ENDDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="STATUS_" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID_, TITLE_, CONTENT_, CREATEDATE_, STARTDATE_, ENDDATE_, CREATOR_, GROUPID_, STATUS_
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from GROUPACTIVITY_
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from GROUPACTIVITY_
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="top.guitoubing.pojo.GroupActivity">
+    insert into GROUPACTIVITY_ (ID_, TITLE_, CONTENT_, 
+      CREATEDATE_, STARTDATE_, ENDDATE_, 
+      CREATOR_, GROUPID_, STATUS_
+      )
+    values (#{id,jdbcType=DECIMAL}, #{title,jdbcType=VARCHAR}, #{content,jdbcType=VARCHAR}, 
+      #{createdate,jdbcType=DECIMAL}, #{startdate,jdbcType=DECIMAL}, #{enddate,jdbcType=DECIMAL}, 
+      #{creator,jdbcType=DECIMAL}, #{groupid,jdbcType=DECIMAL}, #{status,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="top.guitoubing.pojo.GroupActivity">
+    insert into GROUPACTIVITY_
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID_,
+      </if>
+      <if test="title != null">
+        TITLE_,
+      </if>
+      <if test="content != null">
+        CONTENT_,
+      </if>
+      <if test="createdate != null">
+        CREATEDATE_,
+      </if>
+      <if test="startdate != null">
+        STARTDATE_,
+      </if>
+      <if test="enddate != null">
+        ENDDATE_,
+      </if>
+      <if test="creator != null">
+        CREATOR_,
+      </if>
+      <if test="groupid != null">
+        GROUPID_,
+      </if>
+      <if test="status != null">
+        STATUS_,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="title != null">
+        #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="createdate != null">
+        #{createdate,jdbcType=DECIMAL},
+      </if>
+      <if test="startdate != null">
+        #{startdate,jdbcType=DECIMAL},
+      </if>
+      <if test="enddate != null">
+        #{enddate,jdbcType=DECIMAL},
+      </if>
+      <if test="creator != null">
+        #{creator,jdbcType=DECIMAL},
+      </if>
+      <if test="groupid != null">
+        #{groupid,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="top.guitoubing.pojo.GroupActivity">
+    update GROUPACTIVITY_
+    <set>
+      <if test="title != null">
+        TITLE_ = #{title,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null">
+        CONTENT_ = #{content,jdbcType=VARCHAR},
+      </if>
+      <if test="createdate != null">
+        CREATEDATE_ = #{createdate,jdbcType=DECIMAL},
+      </if>
+      <if test="startdate != null">
+        STARTDATE_ = #{startdate,jdbcType=DECIMAL},
+      </if>
+      <if test="enddate != null">
+        ENDDATE_ = #{enddate,jdbcType=DECIMAL},
+      </if>
+      <if test="creator != null">
+        CREATOR_ = #{creator,jdbcType=DECIMAL},
+      </if>
+      <if test="groupid != null">
+        GROUPID_ = #{groupid,jdbcType=DECIMAL},
+      </if>
+      <if test="status != null">
+        STATUS_ = #{status,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="top.guitoubing.pojo.GroupActivity">
+    update GROUPACTIVITY_
+    set TITLE_ = #{title,jdbcType=VARCHAR},
+      CONTENT_ = #{content,jdbcType=VARCHAR},
+      CREATEDATE_ = #{createdate,jdbcType=DECIMAL},
+      STARTDATE_ = #{startdate,jdbcType=DECIMAL},
+      ENDDATE_ = #{enddate,jdbcType=DECIMAL},
+      CREATOR_ = #{creator,jdbcType=DECIMAL},
+      GROUPID_ = #{groupid,jdbcType=DECIMAL},
+      STATUS_ = #{status,jdbcType=VARCHAR}
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </update>
+</mapper>

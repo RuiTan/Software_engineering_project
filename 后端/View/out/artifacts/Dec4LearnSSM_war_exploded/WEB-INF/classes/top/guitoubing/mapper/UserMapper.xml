@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.guitoubing.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="top.guitoubing.pojo.User">
+    <constructor>
+      <idArg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PASSWORD_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PHONE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="INTRO_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="GENDER_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="STATUS_" javaType="java.lang.Short" jdbcType="DECIMAL" />
+      <arg column="STATUS_DESC_" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID_, NAME_, PASSWORD_, PHONE_, AVATOR_, INTRO_, GENDER_, STATUS_, STATUS_DESC_
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from USER_
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from USER_
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="top.guitoubing.pojo.User">
+    insert into USER_ (ID_, NAME_, PASSWORD_, 
+      PHONE_, AVATOR_, INTRO_, 
+      GENDER_, STATUS_, STATUS_DESC_
+      )
+    values (#{id,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{phone,jdbcType=DECIMAL}, #{avator,jdbcType=VARCHAR}, #{intro,jdbcType=VARCHAR}, 
+      #{gender,jdbcType=VARCHAR}, #{status,jdbcType=DECIMAL}, #{statusDesc,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="top.guitoubing.pojo.User">
+    insert into USER_
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID_,
+      </if>
+      <if test="name != null">
+        NAME_,
+      </if>
+      <if test="password != null">
+        PASSWORD_,
+      </if>
+      <if test="phone != null">
+        PHONE_,
+      </if>
+      <if test="avator != null">
+        AVATOR_,
+      </if>
+      <if test="intro != null">
+        INTRO_,
+      </if>
+      <if test="gender != null">
+        GENDER_,
+      </if>
+      <if test="status != null">
+        STATUS_,
+      </if>
+      <if test="statusDesc != null">
+        STATUS_DESC_,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        #{phone,jdbcType=DECIMAL},
+      </if>
+      <if test="avator != null">
+        #{avator,jdbcType=VARCHAR},
+      </if>
+      <if test="intro != null">
+        #{intro,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="statusDesc != null">
+        #{statusDesc,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="top.guitoubing.pojo.User">
+    update USER_
+    <set>
+      <if test="name != null">
+        NAME_ = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        PASSWORD_ = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="phone != null">
+        PHONE_ = #{phone,jdbcType=DECIMAL},
+      </if>
+      <if test="avator != null">
+        AVATOR_ = #{avator,jdbcType=VARCHAR},
+      </if>
+      <if test="intro != null">
+        INTRO_ = #{intro,jdbcType=VARCHAR},
+      </if>
+      <if test="gender != null">
+        GENDER_ = #{gender,jdbcType=VARCHAR},
+      </if>
+      <if test="status != null">
+        STATUS_ = #{status,jdbcType=DECIMAL},
+      </if>
+      <if test="statusDesc != null">
+        STATUS_DESC_ = #{statusDesc,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="top.guitoubing.pojo.User">
+    update USER_
+    set NAME_ = #{name,jdbcType=VARCHAR},
+      PASSWORD_ = #{password,jdbcType=VARCHAR},
+      PHONE_ = #{phone,jdbcType=DECIMAL},
+      AVATOR_ = #{avator,jdbcType=VARCHAR},
+      INTRO_ = #{intro,jdbcType=VARCHAR},
+      GENDER_ = #{gender,jdbcType=VARCHAR},
+      STATUS_ = #{status,jdbcType=DECIMAL},
+      STATUS_DESC_ = #{statusDesc,jdbcType=VARCHAR}
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </update>
+</mapper>
