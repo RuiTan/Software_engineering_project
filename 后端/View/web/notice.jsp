@@ -664,7 +664,7 @@
         }
     }
     function allow(uid, gid) {
-        alert(uid + ',' + gid);
+        // alert(uid + ',' + gid);
         $.ajax({
             type: 'post',
             url: '/allow',
