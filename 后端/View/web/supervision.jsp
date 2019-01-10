@@ -88,9 +88,6 @@
                 <a class="item" href="/groupDemand">
                     购买需求
                 </a>
-                <a class="item" href="/groupActivity">
-                    群组活动
-                </a>
             </div>
             <div class="title item">
                 <i class="ion-ios-lightbulb titleIcon icon"></i>
@@ -98,9 +95,6 @@
                 <i class="dropdown icon"></i> 公共模块
             </div>
             <div class="content">
-                <a class="item" href="/groupItem">
-                    公共物品
-                </a>
                 <a class="item" href="/groupBill">
                     公共账单
                 </a>
@@ -170,9 +164,6 @@
                 <a class="item" href="/groupDemand">
                     购买需求
                 </a>
-                <a class="item" href="/groupActivity">
-                    群组活动
-                </a>
             </div>
         </div>
         <div class="ui dropdown item displaynone scrolling">
@@ -183,9 +174,6 @@
                     公共模块
                 </div>
                 <div class="ui divider"></div>
-                <a class="item" href="/groupItem">
-                    公共物品
-                </a>
                 <a class="item" href="/groupBill">
                     公共账单
                 </a>

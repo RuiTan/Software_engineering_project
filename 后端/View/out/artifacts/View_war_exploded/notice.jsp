@@ -456,6 +456,7 @@
                                                                             <i class="checkmark icon"></i>
                                                                         </div>
                                                                     </div>
+
                                                                 </div>
                                                                 <%--end--%>
 

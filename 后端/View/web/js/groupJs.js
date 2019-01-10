@@ -1,3 +1,146 @@
+var globalid = 1;
+
+function createDemand() {
+    var title = document.getElementById('title').value;
+    var content = document.getElementById('content').value;
+    var ok = true;
+    var data = getData();
+    if (title.length <= 0 ){
+        swal({
+            title : "Error",
+            text : "标题不能为空！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }else if (title.length >= 10){
+        swal({
+            title : "Error",
+            text : "标题长度超出限制",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (content.length <= 10 || content.length >= 80){
+        swal({
+            title : "Error",
+            text : "内容长度需要在10-80个字之间！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (data == null || data == '' || data == ' '){
+        swal({
+            title : "Error",
+            text : "订单项不能为空！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (ok){
+        $.ajax({
+            type: 'post',
+            url: 'createDemand',
+            data:{
+                data: data,
+                title: title,
+                content: content
+            },
+            success: function (data) {
+                if (data == '1'){
+                    swal(
+                        "Success",
+                        "需求创建成功！",
+                        "success"
+                    );
+                    var url = 'window.location.href = \'groupDemand\'';
+                    setTimeout(url ,2000);
+                }else if (data == '3'){
+                    window.location.href = 'index';
+                }else{
+                    window.location.href = 'login.jsp';
+                }
+            }
+        });
+    }
+}
+
+function getData() {
+    var split = '=====';
+    var data = '';
+    for (var i = 1; i<=globalid; i++){
+        var d = document.getElementById('span'+i);
+        if (d != null){
+            var str = d.innerText;
+            // alert(str);
+            data = data + str + split;
+        }
+    }
+    // alert(data);
+    return data;
+}
+
+function createBill() {
+    var bills = document.getElementById('bills');
+    var text = document.getElementById('billTitle').value;
+    var desc = document.getElementById('billDesc').value;
+    var link = document.getElementById('billLink').value;
+    var price = document.getElementById('billPrice').value;
+    var ok = true;
+    if (text.length <= 0 || text.length >= 10){
+        swal({
+            title : "Error",
+            text : "标题长度需要在1-10个字之间！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (desc.length <= 10 || desc.length >= 80){
+        swal({
+            title : "Error",
+            text : "描述内容需要在10-80个字之间！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (price <= 0){
+        swal({
+            title : "Error",
+            text : "价格输入不正确！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (ok){
+        var trid = 'tr' + globalid;
+        var iid = 'i' + globalid;
+        var sid = 'span' + globalid;
+        globalid++;
+        var data = text + '-----' + desc + '-----' + link + '-----' + price;
+        var line = '<tr id="'+ trid +'"><td>' + text + '</td><td><code>'+ desc +'</code></td><td>'+ price +'</td><td>' +
+            '<i id="'+iid+'" class="big red cancel icon" onclick="removeBill(\''+ iid +'\')"></i>' +
+            '<span id="'+ sid +'" style="display: none">'+data+'</span></td></tr>';
+        bills.innerHTML += line;
+    }
+}
+
+function removeBill(iid) {
+    var id = iid.substr(1,2);
+    var trid = 'tr' + id;
+    var bills = document.getElementById('bills');
+    var tr = document.getElementById(trid);
+    bills.removeChild(tr);
+    swal({
+        title : "Success",
+        text : "删除订单成功！"
+    });
+}
 
 function createSV() {
     var title = document.getElementById('title').value;

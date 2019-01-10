@@ -14,6 +14,12 @@
   <sql id="Base_Column_List">
     ID_, DEMANDID_, NAME_, DESCRIPTION_, LINK_, PRICE_
   </sql>
+  <select id="maxId" resultType="java.lang.Integer">
+    SELECT max(id_) from demanditem_
+  </select>
+  <select id="selectByDemand" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select * from demanditem_ WHERE demandid_ = #{id, jdbcType=DECIMAL}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
