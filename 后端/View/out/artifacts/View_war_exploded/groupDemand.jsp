@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>${group.getName()}</title>
+    <title>群组需求</title>
     <link rel="icon" href="img/favicon.ico" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -88,6 +88,9 @@
                 <a class="item" href="/groupDemand">
                     购买需求
                 </a>
+                <a class="item" href="/groupActivity">
+                    群组活动
+                </a>
             </div>
             <div class="title item">
                 <i class="ion-ios-lightbulb titleIcon icon"></i>
@@ -95,6 +98,9 @@
                 <i class="dropdown icon"></i> 公共模块
             </div>
             <div class="content">
+                <a class="item" href="/groupItem">
+                    公共物品
+                </a>
                 <a class="item" href="/groupBill">
                     公共账单
                 </a>
@@ -164,6 +170,9 @@
                 <a class="item" href="/groupDemand">
                     购买需求
                 </a>
+                <a class="item" href="/groupActivity">
+                    群组活动
+                </a>
             </div>
         </div>
         <div class="ui dropdown item displaynone scrolling">
@@ -174,6 +183,9 @@
                     公共模块
                 </div>
                 <div class="ui divider"></div>
+                <a class="item" href="/groupItem">
+                    公共物品
+                </a>
                 <a class="item" href="/groupBill">
                     公共账单
                 </a>
@@ -302,89 +314,82 @@
             <div class="mainWrap navslide">
                 <div class="ui equal width left aligned padded grid stackable">
                     <!--Site Content-->
+                    <!--Site Content-->
 
                     <div class="row">
-                        <div class="sixteen wide tablet five wide computer column">
+                        <div class="column">
                             <div class="ui segments">
                                 <div class="ui segment">
                                     <h5 class="ui header">
-                                        我的状态
+                                        添加群组需求
                                     </h5>
                                 </div>
-                                <div class="ui  segment">
-                                    <div class="ui vertical fluid menu no-border no-radius">
-                                        <div class="item">
-                                            <a class="ui tiny circular image" style="margin: 15px">
-                                                <img src="${data.user.avator}" alt="label-image" />
-                                            </a>
+                                <form class="ui form segment form7">
+                                    <h5 class="ui header">
+                                    </h5>
+                                        <div class="field">
+                                            <label>标题</label>
+                                            <input id="title" type="text" placeholder="Title">
                                         </div>
+                                        <div class="field ">
+                                            <label>描述</label>
+                                            <textarea id="content" cols="1"></textarea>
+                                        </div>
+                                    <div class="ui basic red button" onclick="openModal(1)">添加项目</div>
+                                    <div class="ui blue button" onclick="createDemand()">创建需求</div>
+                                    <table class="ui  fluid celled table">
+                                        <tbody id="bills">
+                                        <tr>
+                                            <td class="three wide">订单名</td>
+                                            <td class="eight wide">订单描述</td>
+                                            <td class="three wide">订单价格</td>
+                                            <td class="two wide">移除订单</td>
+                                        </tr>
 
-                                        <div class="ui floating dropdown labeled icon button" style="margin-left: 15px">
-                                            <i class="filter icon"></i>
-                                            <span id="statusDesc" class="text">${data.user.statusDesc}</span>
-                                            <div class="menu" tabindex="-1">
-                                                <div class="ui icon search input">
-                                                    <i class="search icon"></i>
-                                                    <input type="text" placeholder="Search tags..." tabindex="0">
-                                                </div>
-                                                <div class="divider"></div>
-                                                <div class="header">
-                                                    <i class="tags icon"></i>
-                                                </div>
+                                        </tbody>
+                                    </table>
+                                </form>
+                                <div id="modal1" class="ui small modal">
+                                    <i class="close icon"></i>
+                                    <div class="header">
+                                        添加订单
+                                    </div>
+                                    <div class="content">
+                                        <div class="ui form">
+                                            <div class="field">
+                                                <label>订单名称</label>
+                                                <input type="text" id="billTitle" placeholder="Title"/>
+                                            </div>
+                                            <div class="field">
+                                                <label>订单描述</label>
+                                                <textarea id="billDesc" cols="2"></textarea>
+                                            </div>
+                                            <div class="field">
+                                                <label>订单链接</label>
+                                                <input type="text" id="billLink" placeholder="Link"/>
+                                            </div>
+                                            <div class="field">
+                                                <label>订单价格</label>
+                                                <input type="text" id="billPrice" placeholder="Price"/>
                                             </div>
                                         </div>
-                                        <div class="ui right labeled fluid left icon input" style="margin-left: 15px">
-                                            <i class="tags icon"></i>
-                                            <input id="status" type="text" placeholder="修改状态">
-                                            <a class="ui tag label" onclick="changeStatus()"> 修改状态 </a>
-                                        </div>
-                                        <div class="ui segment">
-                                        </div>
                                     </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="sixteen wide tablet ten wide computer column">
-                            <div class="ui segments">
-                                <div class="ui segment">
-                                    <h5 class="ui header">
-                                        其他组员
-                                    </h5>
-                                </div>
-                                <div class="ui segment">
-                                    <div class="ui items">
-                                        <c:forEach var="u" items="${users}">
-                                            <c:choose>
-                                                <c:when test="${u.getId() != data.user.id}">
-                                                    <div class="item">
-                                                        <a class="ui tiny circular image">
-                                                            <img src="${u.getAvator()}" alt="label-image" />
-                                                        </a>
-                                                        <div class="content">
-                                                            <a class="header">${u.getName()}</a>
-                                                            <div class="description">
-                                                                <button class="ui button"><i class="attach icon"></i>${u.getIntro()}</button>
-                                                                <a class="ui red mini right floated label">${u.getStatusDesc()}</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="ui divider"></div>
-                                                </c:when>
-                                            </c:choose>
-                                        </c:forEach>
-
+                                    <div class="actions">
+                                        <div class="ui black deny button">
+                                            取消
+                                        </div>
+                                        <div class="ui positive right labeled icon button" onclick="createBill()">
+                                            提交订单
+                                            <i class="checkmark icon"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!--Site Content-->
+
                 </div>
             </div>
-
             <!--maincontent-->
         </div>
     </div>

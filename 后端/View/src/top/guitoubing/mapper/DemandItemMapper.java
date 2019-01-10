@@ -2,6 +2,8 @@ package top.guitoubing.mapper;
 
 import top.guitoubing.pojo.DemandItem;
 
+import java.util.List;
+
 public interface DemandItemMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,8 @@ public interface DemandItemMapper {
     int updateByPrimaryKeySelective(DemandItem record);
 
     int updateByPrimaryKey(DemandItem record);
+
+    List<DemandItem> selectByDemand(Integer id);
+
+    Integer maxId();
 }

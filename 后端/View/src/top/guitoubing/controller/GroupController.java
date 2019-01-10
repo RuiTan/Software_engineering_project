@@ -3,14 +3,13 @@ package top.guitoubing.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.HttpRequestHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import top.guitoubing.pojo.Data.GroupDemandData;
 import top.guitoubing.pojo.Data.ProfileData;
 import top.guitoubing.pojo.Group;
-import top.guitoubing.pojo.Notification;
 import top.guitoubing.pojo.User;
 import top.guitoubing.service.*;
 import top.guitoubing.util.CheckUser;
@@ -20,6 +19,7 @@ import top.guitoubing.util.TimeUtil;
 import javax.servlet.http.HttpServletRequest;
 import java.text.ParseException;
 import java.util.Date;
+import java.util.List;
 
 @RequestMapping("")
 @Controller
@@ -39,6 +39,9 @@ public class GroupController {
 
     @Autowired
     SupervisionService supervisionService;
+
+    @Autowired
+    GroupDemandService groupDemandService;
 
     @RequestMapping("group")
     ModelAndView group(HttpServletRequest request, @RequestParam Integer id){
@@ -338,6 +341,66 @@ public class GroupController {
         Long now = new Date().getTime()/1000;
         Long limit = now+time*60;
         supervisionService.createSupervision(title, content, punish, now, limit, group, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("groupBill")
+    ModelAndView groupBill(HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return new ModelAndView("redirect:/login.jsp");
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return new ModelAndView("redirect:/index");
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("groupBill");
+        ProfileData profileData = profileService.getProfileData(user);
+        modelAndView.addObject("data",profileData);
+        modelAndView.addObject("group",group);
+        List<GroupDemandData> groupDemandData = groupDemandService.getGroupDemandData(group.getId());
+        modelAndView.addObject("demand", groupDemandData);
+        Integer price = 0, count = 0;
+        for (GroupDemandData g : groupDemandData){
+            price += g.getPrice();
+            count += g.getItemCount();
+        }
+        modelAndView.addObject("price", price);
+        modelAndView.addObject("count", count);
+        return modelAndView;
+    }
+
+    @RequestMapping("groupDemand")
+    ModelAndView groupDemand(HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return new ModelAndView("redirect:/login.jsp");
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return new ModelAndView("redirect:/index");
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("groupDemand");
+        ProfileData profileData = profileService.getProfileData(user);
+        modelAndView.addObject("data",profileData);
+        modelAndView.addObject("group",group);
+        return modelAndView;
+    }
+
+    @RequestMapping("createDemand")
+    @ResponseBody
+    Integer createDemand(String data, String title, String content, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        groupDemandService.createDemand(data, title, content, group, user);
         return ConstantDefinition.CREATE_NOTICE_SUCCEED;
     }
 

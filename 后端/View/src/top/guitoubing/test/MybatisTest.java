@@ -6,10 +6,7 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import top.guitoubing.mapper.MessageMapper;
-import top.guitoubing.mapper.SupervisionMapper;
-import top.guitoubing.mapper.UserInGroupMapper;
-import top.guitoubing.mapper.UserMapper;
+import top.guitoubing.mapper.*;
 import top.guitoubing.pojo.Data.NotificationData;
 import top.guitoubing.pojo.Data.ProfileData;
 import top.guitoubing.pojo.Group;
@@ -50,6 +47,12 @@ public class MybatisTest {
     @Autowired
     SupervisionMapper supervisionMapper;
 
+    @Autowired
+    GroupDemandMapper groupDemandMapper;
+
+    @Autowired
+    DemandItemMapper demandItemMapper;
+
     @Test
     public void test() throws ParseException {
 //        System.out.println(loginService.login("18936361545", "tanrui"));
@@ -79,8 +82,10 @@ public class MybatisTest {
 //        System.out.println(supervisionMapper.selectSVByGroup(1));
 //        System.out.println(supervisionMapper.selectSVBySupervised(1));
 //        System.out.println(supervisionMapper.selectSVBySupervisor(1));
-        System.out.println(supervisionMapper.selectUserBySupervised(1));
-        System.out.println(supervisionMapper.selectUserBySupervisor(1));
+//        System.out.println(supervisionMapper.selectUserBySupervised(1));
+//        System.out.println(supervisionMapper.selectUserBySupervisor(1));
+        System.out.println(demandItemMapper.selectByDemand(1));
+        System.out.println(groupDemandMapper.selectByGroup(1));
     }
 //
 //    @Test

@@ -13,9 +13,30 @@
       <arg column="STATUS_" javaType="java.lang.String" jdbcType="VARCHAR" />
     </constructor>
   </resultMap>
+  <resultMap id="GroupDemandData" type="top.guitoubing.pojo.Data.GroupDemandData">
+    <constructor>
+      <arg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="TITLE_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CONTENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="ENDDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="STATUS_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    </constructor>
+  </resultMap>
   <sql id="Base_Column_List">
     ID_, TITLE_, CONTENT_, CREATEDATE_, ENDDATE_, CREATOR_, GROUPID_, STATUS_
   </sql>
+  <select id="maxId" resultType="java.lang.Integer">
+    SELECT max(id_) from groupdemand_
+  </select>
+  <select id="selectByGroup" parameterType="java.lang.Integer" resultMap="GroupDemandData">
+    select GROUPDEMAND_.*, User_.NAME_, USER_.AVATOR_ from GROUPDEMAND_, USER_
+    where GROUPDEMAND_.CREATOR_ = USER_.ID_ and GROUPDEMAND_.GROUPID_ = #{id,jdbcType=DECIMAL}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

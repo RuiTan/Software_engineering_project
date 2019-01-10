@@ -108,7 +108,7 @@
     ID_, NAME_, PASSWORD_, PHONE_, AVATOR_, INTRO_, GENDER_, STATUS_, STATUS_DESC_
   </sql>
   <select id="selectGroupUsers" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select USER_.* from USER_, USERINGROUP_ where USERID_=USER_.ID_ and GROUPID_ = #{id,jdbcType=DECIMAL}
+    select USER_.* from USER_, USERINGROUP_ where USERID_=USER_.ID_ and USERINGROUP_.STAUTS_=1 and GROUPID_ = #{id,jdbcType=DECIMAL}
   </select>
   <select id="selectTaskByReply" parameterType="java.lang.Integer" resultMap="TaskResultMap2">
     select TASK_.*, creator.NAME_, creator.AVATOR_, REPLYTASK_.TYPE_, REPLYTASK_.CONTENT_ RCONTENT_
