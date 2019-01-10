@@ -17,6 +17,12 @@
   <sql id="Base_Column_List">
     ID_, TITLE_, CONTENT_, CREATEDATE_, CREATOR_, GROUPID_, STARTDATE_, ENDDATE_, STATUS_
   </sql>
+  <select id="maxId" resultType="java.lang.Integer">
+    SELECT max(id_) from GROUPTASK_
+  </select>
+  <select id="selectByGroup" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select * from GROUPTASK_ where GROUPID_=#{id,jdbcType=DECIMAL}
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

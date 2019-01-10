@@ -2,6 +2,8 @@ package top.guitoubing.mapper;
 
 import top.guitoubing.pojo.GroupTask;
 
+import java.util.List;
+
 public interface GroupTaskMapper {
     int deleteByPrimaryKey(Integer id);
 
@@ -14,4 +16,8 @@ public interface GroupTaskMapper {
     int updateByPrimaryKeySelective(GroupTask record);
 
     int updateByPrimaryKey(GroupTask record);
+
+    Integer maxId();
+
+    List<GroupTask> selectByGroup(Integer gid);
 }

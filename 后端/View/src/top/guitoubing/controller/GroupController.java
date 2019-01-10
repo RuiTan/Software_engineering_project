@@ -43,6 +43,9 @@ public class GroupController {
     @Autowired
     GroupDemandService groupDemandService;
 
+    @Autowired
+    GroupTaskService groupTaskService;
+
     @RequestMapping("group")
     ModelAndView group(HttpServletRequest request, @RequestParam Integer id){
         User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
@@ -402,6 +405,46 @@ public class GroupController {
         }
         groupDemandService.createDemand(data, title, content, group, user);
         return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("groupTask")
+    ModelAndView groupTask(HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return new ModelAndView("redirect:/login.jsp");
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return new ModelAndView("redirect:/index");
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("groupTask");
+        ProfileData profileData = profileService.getProfileData(user);
+        modelAndView.addObject("data",profileData);
+        modelAndView.addObject("group",group);
+        modelAndView.addObject("groupTask",groupTaskService.getGroupTask(group.getId()));
+        return modelAndView;
+    }
+
+    @RequestMapping("createGroupTask")
+    @ResponseBody
+    Integer createGroupTask(String title, String content, String time, HttpServletRequest request) throws ParseException {
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        Long now = TimeUtil.currentStamp();
+        Long end = Long.valueOf(TimeUtil.dateToStamp(time));
+        if (now >= end){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_DATE;
+        }else {
+            groupTaskService.createGroupTask(title, content, now, end, group, user);
+            return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+        }
     }
 
 }

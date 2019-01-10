@@ -321,7 +321,7 @@
             window.location.href = '/search?key=' + search;
         }
         function allow(uid, gid) {
-            alert(uid + ',' + gid);
+            // alert(uid + ',' + gid);
             $.ajax({
                 type: 'post',
                 url: '/allow',

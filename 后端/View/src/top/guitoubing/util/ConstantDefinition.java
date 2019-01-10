@@ -72,4 +72,8 @@ public class ConstantDefinition {
     public static final Integer SUPERVISOR = 2;
     public static final Integer SUPERVISED = 1;
 
+    // GroupTask Status
+    public static final String GROUP_TASK_GOING = "1";
+    public static final String GROUP_TASK_INVALID = "2";
+
 }
