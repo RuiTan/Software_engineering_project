@@ -10,4 +10,6 @@ public interface NotificationService {
     void addLiked(Integer nid, User user);
 
     void removeLiked(Integer nid, User user);
+
+    void updateNotification(Integer nid, String title, String content, long end);
 }

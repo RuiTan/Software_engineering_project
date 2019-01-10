@@ -7,13 +7,17 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import top.guitoubing.mapper.MessageMapper;
+import top.guitoubing.mapper.UserInGroupMapper;
 import top.guitoubing.mapper.UserMapper;
 import top.guitoubing.pojo.Data.NotificationData;
 import top.guitoubing.pojo.Data.ProfileData;
+import top.guitoubing.pojo.Group;
 import top.guitoubing.pojo.Message;
 import top.guitoubing.pojo.User;
+import top.guitoubing.pojo.UserInGroup;
 import top.guitoubing.service.LoginService;
 import top.guitoubing.service.ProfileService;
+import top.guitoubing.service.TaskService;
 import top.guitoubing.util.TimeUtil;
 
 import java.text.ParseException;
@@ -36,6 +40,12 @@ public class MybatisTest {
     @Autowired
     ProfileService profileService;
 
+    @Autowired
+    UserInGroupMapper userInGroupMapper;
+
+    @Autowired
+    TaskService taskService;
+
 
     @Test
     public void test() throws ParseException {
@@ -53,10 +63,16 @@ public class MybatisTest {
 //        System.out.println(userMapper.selectGroupByKey("%大%"));
 //        System.out.println(userMapper.getGroups());
 //        System.out.println(userMapper.selectNotifByGroup(1));
-        List<NotificationData> notificationData = userMapper.selectNotifByGroup(1);
-        List<NotificationData> notificationData2 = userMapper.selectNotifByLiked(1);
-        System.out.println(TimeUtil.stampToDate("1547064249"));
+//        List<NotificationData> notificationData = userMapper.selectNotifByGroup(1);
+//        List<NotificationData> notificationData2 = userMapper.selectNotifByLiked(1);
+//        System.out.println(TimeUtil.stampToDate("1547064249"));
 //        System.out.println(TimeUtil.dateToStamp("01/10/2019 00:00:00"));
+//        System.out.println("01/10/2019 00:00:00".substring(0, 10));
+//        System.out.println(userMapper.selectTaskByCreator(1));
+//        System.out.println(userMapper.selectTaskByGroup(1));
+//        System.out.println(userMapper.selectTaskByReply(2));
+//        System.out.println(userInGroupMapper.countUsers(1));
+        taskService.achiveTask(1, new Group(), new User());
     }
 //
 //    @Test

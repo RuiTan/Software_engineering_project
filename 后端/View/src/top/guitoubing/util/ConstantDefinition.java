@@ -53,4 +53,14 @@ public class ConstantDefinition {
     public static final Integer NOTIFICATION_LIKED = 1;
     public static final Integer NOTIFICATION_DISLIKED = 2;
 
+    // Task Status
+    public static final String TASK_WAITING = "1";
+    public static final String TASK_UNDERWAY = "2";
+    public static final String TASK_FINISHED = "3";
+    public static final String TASK_INVALID = "4";
+    // Task Reply
+    public static final Integer REPLY_TASK_NONE = 1;
+    public static final Integer REPLY_TASK_ACCEPT = 2;
+    public static final Integer REPLY_TASK_REFUSE = 3;
+
 }

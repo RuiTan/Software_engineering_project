@@ -314,9 +314,8 @@
             <div class="mainWrap navslide">
                 <div class="ui equal width left aligned padded grid stackable">
                     <!--Site Content-->
-
                     <div class="row">
-                        <div class="ten wide column">
+                        <div class="sixteen wide column">
                             <div class="ui segments">
                                 <div class="ui segment">
                                     <h5 class="ui header">
@@ -368,7 +367,7 @@
                                         <h3 class="nothing-message">通知列表</h3>
 
                                         <div class="ui segment">
-                                            <div class="ui three column grid stackable">
+                                            <div class="ui five column grid stackable">
 
                                                 <c:forEach var="n" items="${notif}">
                                                     <div class="column">
@@ -423,16 +422,16 @@
                                                                             </div>
                                                                             <div class="field">
                                                                                 <label>发布日期</label>
-                                                                                <input type="text" id="createDate${n.getId()}" readonly="readonly" value="${TimeUtil.stampToDate(String.valueOf(n.getCreatedate()))}"/>
+                                                                                <input type="text" id="createDate${n.getId()}" readonly="readonly" value="${TimeUtil.stampToDate(String.valueOf(n.getCreatedate())).substring(0, 10)}"/>
                                                                             </div>
                                                                             <div class="field">
                                                                                 <label>到期日期</label>
-                                                                                <input type="text" id="endDate${n.getId()}" value="${TimeUtil.stampToDate(String.valueOf(n.getEnddate()))}"/>
+                                                                                <input type="text" id="endDate${n.getId()}" value="${TimeUtil.stampToDate(String.valueOf(n.getEnddate())).substring(0, 10)}"/>
                                                                             </div>
                                                                             <div class="field">
                                                                                 <label>优先级</label>
                                                                                 <div class="ui dropdown selection" tabindex="0">
-                                                                                    <select id="priority{$n.getId()}" name="gender">
+                                                                                    <select id="priority${n.getId()}" name="gender">
                                                                                         <option value="">优先级</option>
                                                                                         <option value="1" selected="selected">最高</option>
                                                                                         <option value="2">中等</option>
@@ -488,10 +487,13 @@
 <script>
     function editNotif(nid) {
         var title = document.getElementById('title' + nid).value;
+        // alert(title);
         var content = document.getElementById('content' + nid).value;
+        // alert(content);
         var endDate = document.getElementById('endDate' + nid).value;
-        alert(endDate);
+        // alert(endDate);
         var priority = document.getElementById('priority' + nid).options[document.getElementById('priority' + nid).selectedIndex].value;
+        // alert(priority);
         var ok = true;
         if (title.length <= 0 ){
             swal({
@@ -519,12 +521,46 @@
             });
             ok = false;
         }
-        var pattern = '/((((0[13578]|1[02])/(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)/(0[1-9]|[12][0-9]|30))|((02)/(0[1-9]|[1][0-9]|2[0-8])))/([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3}))|(02/29/(([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00)))/';
-        if (endDate.match(pattern) == null){
-            alert("格式不正确");
+        var pattern =
+            '((((0[13578]|1[02])/(0[1-9]|[12][0-9]|3[01]))|((0[469]|11)/(0[1-9]|[12][0-9]|30))|((02)/(0[1-9]|[1][0-9]|2[0-8])))/([0-9]{3}[1-9]|[0-9]{2}[1-9][0-9]{1}|[0-9]{1}[1-9][0-9]{2}|[1-9][0-9]{3}))|(02/29/(([0-9]{2})(0[48]|[2468][048]|[13579][26])|((0[48]|[2468][048]|[3579][26])00)))';
+        // alert(pattern);
+        if (endDate.search(/pattern/i) == null){
+            swal({
+                title : "Error",
+                text : "日期格式不正确！",
+                type : "warning",
+                cancelButtonText : "No"
+            });
+            ok = false;
         }else {
-            alert("正确");
+            // alert("正确");
         }
+        $.ajax({
+            type: 'post',
+            url: 'editNotif',
+            data:{
+                nid: nid,
+                title: title,
+                content: content,
+                endDate: endDate,
+                priority: priority
+            },
+            success: function (data) {
+                if (data == '1'){
+                    swal({
+                        title : "Success",
+                        text : "编辑成功！"
+                    });
+                    var url = 'window.location.href = \'notice\'';
+                    setTimeout(url ,2000);
+                }else if(data == '2'){
+                    swal({
+                        title : "Failed",
+                        text : "截止日期不能早于开始日期！"
+                    });
+                }
+            }
+        });
     }
     function removeLiked(nid) {
         $.ajax({

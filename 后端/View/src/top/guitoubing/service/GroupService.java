@@ -27,4 +27,6 @@ public interface GroupService {
 
     List<NotificationData> getNotification(Integer uid, Integer gid);
 
+    List<User> getGroupUsers(Integer gid);
+
 }

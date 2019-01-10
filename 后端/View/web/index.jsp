@@ -1,6 +1,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page import="top.guitoubing.util.ConstantDefinition" %>
 <%@ page import="top.guitoubing.pojo.Data.MessageData" %>
+<%@ page import="top.guitoubing.util.TimeUtil" %>
+<%@ page import="java.lang.String" %>
 <%--
   Created by IntelliJ IDEA.
   User: Tanrui
@@ -548,7 +550,7 @@
                                                             </c:when>
                                                         </c:choose>
                                                         <div class="date">
-                                                                ${g.date}
+                                                                ${TimeUtil.stampToDate(String.valueOf(g.date))}
                                                         </div>
                                                     </div>
                                                 </div>

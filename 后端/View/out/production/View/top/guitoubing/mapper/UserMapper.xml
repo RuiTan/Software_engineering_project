@@ -70,9 +70,61 @@
       <arg column="LIKED_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
     </constructor>
   </resultMap>
+  <resultMap id="TaskResultMap1" type="top.guitoubing.pojo.Data.TaskData">
+    <constructor>
+      <arg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="TITLE_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CONTENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="STATUS_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="LIMITDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="USERS_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="CALCUSERS_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <resultMap id="TaskResultMap2" type="top.guitoubing.pojo.Data.TaskData">
+    <constructor>
+      <arg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="TITLE_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CONTENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="STATUS_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="LIMITDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="USERS_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="CALCUSERS_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="TYPE_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="RCONTENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
   <sql id="Base_Column_List">
     ID_, NAME_, PASSWORD_, PHONE_, AVATOR_, INTRO_, GENDER_, STATUS_, STATUS_DESC_
   </sql>
+  <select id="selectGroupUsers" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select USER_.* from USER_, USERINGROUP_ where USERID_=USER_.ID_ and GROUPID_ = #{id,jdbcType=DECIMAL}
+  </select>
+  <select id="selectTaskByReply" parameterType="java.lang.Integer" resultMap="TaskResultMap2">
+    select TASK_.*, creator.NAME_, creator.AVATOR_, REPLYTASK_.TYPE_, REPLYTASK_.CONTENT_ RCONTENT_
+    from TASK_, USER_ creator, REPLYTASK_
+    where creator.ID_=TASK_.CREATOR_ and REPLYTASK_.TASKID_=TASK_.ID_ and REPLYTASK_.USERID_=#{id,jdbcType=DECIMAL}
+  </select>
+  <select id="selectTaskByCreator" parameterType="java.lang.Integer" resultMap="TaskResultMap1">
+    select TASK_.*, creator.NAME_, creator.AVATOR_
+    from TASK_, USER_ creator
+    where TASK_.CREATOR_=#{id,jdbcType=DECIMAL} and creator.ID_=TASK_.CREATOR_
+  </select>
+  <select id="selectTaskByGroup" parameterType="java.lang.Integer" resultMap="TaskResultMap1">
+    select TASK_.*, creator.NAME_, creator.AVATOR_
+    from TASK_, USER_ creator
+    where TASK_.GROUPID_=#{id,jdbcType=DECIMAL} and TASK_.CREATOR_=creator.ID_
+  </select>
   <select id="selectNotifByLiked" parameterType="java.lang.Integer" resultMap="NotificationResultMap">
     select NOTIFICATION_.*, USER_.NAME_, USER_.AVATOR_, 1 liked_
     from NOTIFICATION_, USER_, LIKENOTIF_

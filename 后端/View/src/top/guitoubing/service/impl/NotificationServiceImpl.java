@@ -35,5 +35,14 @@ public class NotificationServiceImpl implements NotificationService {
         likeNotificationMapper.deleteByPrimaryKey(nid);
     }
 
+    @Override
+    public void updateNotification(Integer nid, String title, String content, long end) {
+        Notification notification = notificationMapper.selectByPrimaryKey(nid);
+        notification.setTitle(title);
+        notification.setContent(content);
+        notification.setEnddate(end);
+        notificationMapper.updateByPrimaryKey(notification);
+    }
+
 
 }

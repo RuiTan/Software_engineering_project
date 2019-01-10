@@ -1,9 +1,6 @@
 package top.guitoubing.mapper;
 
-import top.guitoubing.pojo.Data.ApplyData;
-import top.guitoubing.pojo.Data.GroupSearchData;
-import top.guitoubing.pojo.Data.MessageData;
-import top.guitoubing.pojo.Data.NotificationData;
+import top.guitoubing.pojo.Data.*;
 import top.guitoubing.pojo.Group;
 import top.guitoubing.pojo.Notification;
 import top.guitoubing.pojo.User;
@@ -56,5 +53,13 @@ public interface UserMapper {
     List<NotificationData> selectNotifByGroup(Integer id);
 
     List<NotificationData> selectNotifByLiked(Integer id);
+
+    List<TaskData> selectTaskByReply(Integer id);
+
+    List<TaskData> selectTaskByCreator(Integer id);
+
+    List<TaskData> selectTaskByGroup(Integer id);
+
+    List<User> selectGroupUsers(Integer id);
 
 }

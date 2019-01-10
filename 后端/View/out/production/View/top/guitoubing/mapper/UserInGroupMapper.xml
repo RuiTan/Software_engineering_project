@@ -12,6 +12,9 @@
   <sql id="Base_Column_List">
     USERID_, GROUPID_, STAUTS_, AUTHORITY_
   </sql>
+  <select id="countUsers" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+    SELECT count(1) FROM USERINGROUP_ WHERE GROUPID_=#{id,jdbcType=DECIMAL}
+  </select>
   <select id="selectByPrimaryKey" parameterType="top.guitoubing.pojo.UserInGroupKey" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

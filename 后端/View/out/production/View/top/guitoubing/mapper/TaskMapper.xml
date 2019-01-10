@@ -19,6 +19,9 @@
     ID_, TITLE_, CONTENT_, STATUS_, CREATEDATE_, LIMITDATE_, CREATOR_, GROUPID_, USERS_, 
     CALCUSERS_
   </sql>
+  <select id="maxId" resultType="java.lang.Integer">
+    SELECT max(id_) FROM TASK_
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

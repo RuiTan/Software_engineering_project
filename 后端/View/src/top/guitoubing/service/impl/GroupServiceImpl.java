@@ -142,5 +142,10 @@ public class GroupServiceImpl implements GroupService {
         return nd1;
     }
 
+    @Override
+    public List<User> getGroupUsers(Integer gid) {
+        return userMapper.selectGroupUsers(gid);
+    }
+
 
 }

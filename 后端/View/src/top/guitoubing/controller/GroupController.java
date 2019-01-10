@@ -15,6 +15,7 @@ import top.guitoubing.pojo.User;
 import top.guitoubing.service.GroupService;
 import top.guitoubing.service.NotificationService;
 import top.guitoubing.service.ProfileService;
+import top.guitoubing.service.TaskService;
 import top.guitoubing.util.CheckUser;
 import top.guitoubing.util.ConstantDefinition;
 import top.guitoubing.util.TimeUtil;
@@ -36,6 +37,9 @@ public class GroupController {
     @Autowired
     NotificationService notificationService;
 
+    @Autowired
+    TaskService taskService;
+
     @RequestMapping("group")
     ModelAndView group(HttpServletRequest request, @RequestParam Integer id){
         User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
@@ -49,6 +53,7 @@ public class GroupController {
         ProfileData profileData = profileService.getProfileData(user);
         modelAndView.addObject("data",profileData);
         modelAndView.addObject("group",group);
+        modelAndView.addObject("users", groupService.getGroupUsers(group.getId()));
         return modelAndView;
     }
 
@@ -119,6 +124,139 @@ public class GroupController {
             return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
         }
         notificationService.removeLiked(nid, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("editNotif")
+    @ResponseBody
+    Integer editNotif(Integer nid, String title, String content, String endDate, Integer priority, HttpServletRequest request) throws ParseException {
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        Long limit = Long.valueOf(TimeUtil.dateToStamp(endDate + " 00:00:00"));
+        Long now = new Date().getTime()/1000;
+        if (limit <= now){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_DATE;
+        }else {
+            notificationService.updateNotification(nid, title, content, limit);
+            return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+        }
+    }
+
+    @RequestMapping("task")
+    ModelAndView task(HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return new ModelAndView("redirect:/login.jsp");
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return new ModelAndView("redirect:/index");
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("task");
+        ProfileData profileData = profileService.getProfileData(user);
+        modelAndView.addObject("data",profileData);
+        modelAndView.addObject("group",group);
+        modelAndView.addObject("task", taskService.getTasks(group, user));
+        return modelAndView;
+    }
+
+    @RequestMapping("createTask")
+    @ResponseBody
+    Integer createTask(String title, String content, Integer time, Integer members, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        Long now = new Date().getTime()/1000;
+        Long limit = now+time*60;
+        taskService.createTask(title, content, now, limit, members, group, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("refuseTask")
+    @ResponseBody
+    Integer refuseTask(Integer tid, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        taskService.refuseTask(tid, group, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("applyTask")
+    @ResponseBody
+    Integer applyTask(Integer tid, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        taskService.acceptTask(tid, group, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("achiveTask")
+    @ResponseBody
+    Integer achiveTask(Integer tid, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        taskService.achiveTask(tid, group, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("cancelTask")
+    @ResponseBody
+    Integer cancelTask(Integer tid, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        taskService.cancelTask(tid, group, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("changeStatus")
+    @ResponseBody
+    Integer changeStatus(String status, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        user.setStatusDesc(status);
+        profileService.updateUser(user);
         return ConstantDefinition.CREATE_NOTICE_SUCCEED;
     }
 }
