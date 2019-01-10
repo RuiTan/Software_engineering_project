@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>任务</title>
+    <title>监督</title>
     <link rel="icon" href="img/favicon.ico" />
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -320,7 +320,7 @@
                             <div class="ui segments">
                                 <div class="ui segment">
                                     <h5 class="ui header">
-                                        任务列表
+                                      监督列表
                                     </h5>
                                 </div>
                                 <div class="ui segment fullheight">
@@ -334,26 +334,25 @@
                                             <textarea id="content" name="maxLength" cols="4"></textarea>
                                         </div>
                                         <div class="field">
+                                            <label>惩罚</label>
+                                            <input id="punish" placeholder="Punish" type="text">
+                                        </div>
+                                        <div class="field">
                                             <label>有效时长/分钟</label>
                                             <input id="time" placeholder="Valid Time" type="number">
                                         </div>
-                                        <div class="field">
-                                            <label>任务人数</label>
-                                            <input id="members" placeholder="Members" type="number">
-                                        </div>
-                                        <div class="ui blue submit button" onclick="createTask()">创建任务</div>
+                                        <div class="ui blue submit button" onclick="createSV()">创建监督</div>
                                     </form>
 
                                     <div id="task-container">
 
-                                        <h3 class="nothing-message">群组任务</h3>
+                                        <h3 class="nothing-message">群组监督</h3>
 
                                         <div class="ui segment">
                                             <div class="ui two column grid stackable">
-                                                <c:forEach var="t" items="${task}">
+                                                <c:forEach var="t" items="${supervision}">
                                                     <c:choose>
                                                         <c:when test="${t.getCreator() != data.user.id}">
-
                                                             <div class="column">
                                                                 <div class="ui cards">
                                                                     <div class="card">
@@ -369,73 +368,67 @@
                                                                                 ${t.getContent()}
                                                                             </div>
                                                                         </div>
-                                                                        <div class="ui icon message inverted yellowli" style="height: 30px">
+                                                                        <div class="ui icon message inverted blueli" style="height: 30px">
                                                                             <div class="header">
-                                                                                状态：
-                                                                                <c:choose>
-                                                                                    <c:when test="${t.getStatus() == ConstantDefinition.TASK_WAITING}">
-                                                                                        等待所有人接受……
-                                                                                    </c:when>
-                                                                                    <c:when test="${t.getStatus() == ConstantDefinition.TASK_UNDERWAY}">
-                                                                                        等待确认……
-                                                                                    </c:when>
-                                                                                    <c:when test="${t.getStatus() == ConstantDefinition.TASK_FINISHED}">
-                                                                                        已完成……
-                                                                                    </c:when>
-                                                                                    <c:otherwise>
-                                                                                        已失效……
-                                                                                    </c:otherwise>
-                                                                                </c:choose>
+                                                                                被监督人：<c:forEach var="u" items="${t.getSupervised()}">${u}&nbsp;</c:forEach>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="ui icon message inverted blueli" style="height: 30px">
+                                                                            <div class="header">
+                                                                                监督人：<c:forEach var="u" items="${t.getSupervisor()}">${u}&nbsp;</c:forEach>
                                                                             </div>
                                                                         </div>
                                                                         <c:choose>
-                                                                            <c:when test="${t.getStatus() == ConstantDefinition.TASK_WAITING}">
-                                                                                <c:choose>
-                                                                                    <c:when test="${t.getReplyType() == ConstantDefinition.REPLY_TASK_NONE}">
-                                                                                        <div class="ui three buttons">
-                                                                                            <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
-                                                                                            <div class="ui basic blue button" onclick="applyTask(${t.getId()})">接受</div>
-                                                                                            <div class="ui basic red button" onclick="refuseTask(${t.getId()})">拒绝</div>
-                                                                                        </div>
-                                                                                    </c:when>
-                                                                                    <c:when test="${t.getReplyType() == ConstantDefinition.REPLY_TASK_ACCEPT}">
-                                                                                        <div class="ui three buttons">
-                                                                                            <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
-                                                                                            <div class="ui basic blue button">已接受</div>
-                                                                                            <div class="ui basic red button" onclick="refuseTask(${t.getId()})">拒绝</div>
-                                                                                        </div>
-                                                                                    </c:when>
-                                                                                    <c:when test="${t.getReplyType() == ConstantDefinition.REPLY_TASK_REFUSE}">
-                                                                                        <div class="ui three buttons">
-                                                                                            <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
-                                                                                            <div class="ui basic blue button" onclick="applyTask(${t.getId()})">接受</div>
-                                                                                            <div class="ui basic red button">已拒绝</div>
-                                                                                        </div>
-                                                                                    </c:when>
-                                                                                </c:choose>
-                                                                            </c:when>
-
-                                                                            <c:when test="${t.getStatus() == ConstantDefinition.TASK_UNDERWAY}">
-
-                                                                                <div class="ui three buttons">
+                                                                            <c:when test="${t.getEnddate() <= TimeUtil.currentStamp()}">
+                                                                                <div class="ui two buttons">
                                                                                     <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
-                                                                                    <div class="ui basic blue button">已接受</div>
-                                                                                    <div class="ui basic red button" onclick="refuseTask(${t.getId()})">拒绝</div>
+                                                                                    <div class="ui basic blue button">监督已完成</div>
                                                                                 </div>
                                                                             </c:when>
                                                                             <c:otherwise>
-                                                                                <div class="ui one buttons">
-                                                                                    <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
-                                                                                </div>
+                                                                                <c:choose>
+                                                                                    <c:when test="${t.getStatus() == ConstantDefinition.SV_INVALID}">
+                                                                                        <div class="ui two buttons">
+                                                                                            <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
+                                                                                            <div class="ui basic blue button">监督已失效</div>
+                                                                                        </div>
+                                                                                    </c:when>
+                                                                                    <c:when test="${t.getStatus() == ConstantDefinition.SV_WAITING}">
+                                                                                        <c:choose>
+                                                                                            <c:when test="${t.getType() == ConstantDefinition.SV_NOT_IN}">
+                                                                                                <div class="ui three buttons">
+                                                                                                    <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
+                                                                                                    <div class="ui basic blue button" onclick="supervise(${t.getId()})">加入监督</div>
+                                                                                                    <div class="ui basic red button" onclick="supervised(${t.getId()})">想被监督</div>
+                                                                                                </div>
+                                                                                            </c:when>
+                                                                                            <c:when test="${t.getType() == ConstantDefinition.SUPERVISED}">
+                                                                                                <div class="ui three buttons">
+                                                                                                    <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
+                                                                                                    <div class="ui blue button" >已被监督</div>
+                                                                                                    <div class="ui basic red button" onclick="supervise(${t.getId()})">加入监督</div>
+                                                                                                </div>
+                                                                                            </c:when>
+                                                                                            <c:when test="${t.getType() == ConstantDefinition.SUPERVISOR}">
+                                                                                                <div class="ui three buttons">
+                                                                                                    <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
+                                                                                                    <div class="ui blue button">已加入</div>
+                                                                                                    <div class="ui basic red button" onclick="supervised(${t.getId()})">想被监督</div>
+                                                                                                </div>
+                                                                                            </c:when>
+                                                                                        </c:choose>
+                                                                                    </c:when>
+                                                                                </c:choose>
                                                                             </c:otherwise>
                                                                         </c:choose>
+
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                             <div id="modal${t.getId()}" class="ui small modal">
                                                                 <i class="close icon"></i>
                                                                 <div class="header">
-                                                                    任务详情
+                                                                    监督详情
                                                                 </div>
                                                                 <div class="content">
                                                                     <div class="ui form">
@@ -452,27 +445,29 @@
                                                                             <input type="text" readonly="readonly" value="${t.getCreatorName()}"/>
                                                                         </div>
                                                                         <div class="field">
-                                                                            <label>发布日期</label>
+                                                                            <label>开始日期</label>
                                                                             <input type="text" readonly="readonly" value="${TimeUtil.stampToDate(String.valueOf(t.getCreatedate()))}"/>
                                                                         </div>
                                                                         <div class="field">
                                                                             <label>到期日期</label>
-                                                                            <input type="text" readonly="readonly" value="${TimeUtil.stampToDate(String.valueOf(t.getLimitdate()))}"/>
+                                                                            <input type="text" readonly="readonly" value="${TimeUtil.stampToDate(String.valueOf(t.getEnddate()))}"/>
                                                                         </div>
                                                                         <div class="field">
                                                                             <label>状态</label>
                                                                             <c:choose>
-                                                                                <c:when test="${t.getStatus() == ConstantDefinition.TASK_WAITING}">
-                                                                                    <input type="text" readonly="readonly" value="等待所有人接受……"/>
-                                                                                </c:when>
-                                                                                <c:when test="${t.getStatus() == ConstantDefinition.TASK_UNDERWAY}">
-                                                                                    <input type="text" readonly="readonly" value="等待确认……"/>
-                                                                                </c:when>
-                                                                                <c:when test="${t.getStatus() == ConstantDefinition.TASK_FINISHED}">
-                                                                                    <input type="text" readonly="readonly" value="已经完成……"/>
+                                                                                <c:when test="${t.getEnddate() <= TimeUtil.currentStamp()}">
+                                                                                    <input type="text" readonly="readonly" value="已完成……"/>
                                                                                 </c:when>
                                                                                 <c:otherwise>
-                                                                                    <input type="text" readonly="readonly" value="已失效……"/>
+                                                                                    <c:choose>
+                                                                                        <c:when test="${t.getStatus() == ConstantDefinition.SV_INVALID}">
+                                                                                            <input type="text" readonly="readonly" value="已失效……"/>
+                                                                                        </c:when>
+
+                                                                                        <c:when test="${t.getStatus() == ConstantDefinition.SV_WAITING}">
+                                                                                            <input type="text" readonly="readonly" value="进行中……"/>
+                                                                                        </c:when>
+                                                                                    </c:choose>
                                                                                 </c:otherwise>
                                                                             </c:choose>
                                                                         </div>
@@ -509,11 +504,9 @@
 
                                     <div class="ui segment">
                                         <div class="ui two column grid stackable">
-
-                                            <c:forEach var="t" items="${task}">
+                                            <c:forEach var="t" items="${supervision}">
                                                 <c:choose>
                                                     <c:when test="${t.getCreator() == data.user.id}">
-
                                                         <div class="column">
                                                             <div class="ui cards">
                                                                 <div class="card">
@@ -529,52 +522,48 @@
                                                                                 ${t.getContent()}
                                                                         </div>
                                                                     </div>
-                                                                    <div class="ui icon message inverted yellowli" style="height: 30px">
+                                                                    <div class="ui icon message inverted blueli" style="height: 30px">
                                                                         <div class="header">
-                                                                            状态：
-                                                                            <c:choose>
-                                                                                <c:when test="${t.getStatus() == ConstantDefinition.TASK_WAITING}">
-                                                                                    等待所有人接受……
-                                                                                </c:when>
-                                                                                <c:when test="${t.getStatus() == ConstantDefinition.TASK_UNDERWAY}">
-                                                                                    等待确认……
-                                                                                </c:when>
-                                                                                <c:when test="${t.getStatus() == ConstantDefinition.TASK_FINISHED}">
-                                                                                    已完成……
-                                                                                </c:when>
-                                                                                <c:otherwise>
-                                                                                    已失效……
-                                                                                </c:otherwise>
-                                                                            </c:choose>
+                                                                            被监督人：<c:forEach var="u" items="${t.getSupervised()}">${u}&nbsp;</c:forEach>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="ui icon message inverted blueli" style="height: 30px">
+                                                                        <div class="header">
+                                                                            监督人：<c:forEach var="u" items="${t.getSupervisor()}">${u}&nbsp;</c:forEach>
                                                                         </div>
                                                                     </div>
                                                                     <c:choose>
-                                                                        <c:when test="${t.getStatus() == ConstantDefinition.TASK_WAITING}">
-                                                                                    <div class="ui two buttons">
-                                                                                        <div class="ui basic green button" onclick="openModal2(${t.getId()})">查看详情</div>
-                                                                                        <div class="ui basic blue button" onclick="cancelTask(${t.getId()})">取消任务</div>
-                                                                                    </div>
-                                                                        </c:when>
-                                                                        <c:when test="${t.getStatus() == ConstantDefinition.TASK_UNDERWAY}">
-                                                                            <div class="ui three buttons">
+                                                                        <c:when test="${t.getEnddate() <= TimeUtil.currentStamp()}">
+                                                                            <div class="ui two buttons">
                                                                                 <div class="ui basic green button" onclick="openModal2(${t.getId()})">查看详情</div>
-                                                                                <div class="ui basic blue button" onclick="achiveTask(${t.getId()})">完成任务</div>
-                                                                                <div class="ui basic red button" onclick="cancelTask(${t.getId()})">取消任务</div>
+                                                                                <div class="ui basic blue button">监督已完成</div>
                                                                             </div>
                                                                         </c:when>
                                                                         <c:otherwise>
-                                                                            <div class="ui one buttons">
-                                                                                <div class="ui basic green button" onclick="openModal2(${t.getId()})">查看详情</div>
-                                                                            </div>
+                                                                            <c:choose>
+                                                                                <c:when test="${t.getStatus() == ConstantDefinition.SV_INVALID}">
+                                                                                    <div class="ui two buttons">
+                                                                                        <div class="ui basic green button" onclick="openModal2(${t.getId()})">查看详情</div>
+                                                                                        <div class="ui basic blue button">监督已失效</div>
+                                                                                    </div>
+                                                                                </c:when>
+                                                                                <c:otherwise>
+                                                                                    <div class="ui two buttons">
+                                                                                        <div class="ui basic green button" onclick="openModal2(${t.getId()})">查看详情</div>
+                                                                                        <div class="ui basic blue button" onclick="cancelSV(${t.getId()})">取消监督</div>
+                                                                                    </div>
+                                                                                </c:otherwise>
+                                                                            </c:choose>
                                                                         </c:otherwise>
                                                                     </c:choose>
+
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div id="modal2${t.getId()}" class="ui small modal">
                                                             <i class="close icon"></i>
                                                             <div class="header">
-                                                                任务详情
+                                                                监督详情
                                                             </div>
                                                             <div class="content">
                                                                 <div class="ui form">
@@ -591,27 +580,29 @@
                                                                         <input type="text" readonly="readonly" value="${t.getCreatorName()}"/>
                                                                     </div>
                                                                     <div class="field">
-                                                                        <label>发布日期</label>
+                                                                        <label>开始日期</label>
                                                                         <input type="text" readonly="readonly" value="${TimeUtil.stampToDate(String.valueOf(t.getCreatedate()))}"/>
                                                                     </div>
                                                                     <div class="field">
                                                                         <label>到期日期</label>
-                                                                        <input type="text" readonly="readonly" value="${TimeUtil.stampToDate(String.valueOf(t.getLimitdate()))}"/>
+                                                                        <input type="text" readonly="readonly" value="${TimeUtil.stampToDate(String.valueOf(t.getEnddate()))}"/>
                                                                     </div>
                                                                     <div class="field">
                                                                         <label>状态</label>
                                                                         <c:choose>
-                                                                            <c:when test="${t.getStatus() == ConstantDefinition.TASK_WAITING}">
-                                                                                <input type="text" readonly="readonly" value="等待所有人接受……"/>
-                                                                            </c:when>
-                                                                            <c:when test="${t.getStatus() == ConstantDefinition.TASK_UNDERWAY}">
-                                                                                <input type="text" readonly="readonly" value="等待确认……"/>
-                                                                            </c:when>
-                                                                            <c:when test="${t.getStatus() == ConstantDefinition.TASK_FINISHED}">
-                                                                                <input type="text" readonly="readonly" value="已经完成……"/>
+                                                                            <c:when test="${t.getEnddate() <= TimeUtil.currentStamp()}">
+                                                                                <input type="text" readonly="readonly" value="已完成……"/>
                                                                             </c:when>
                                                                             <c:otherwise>
-                                                                                <input type="text" readonly="readonly" value="已失效……"/>
+                                                                                <c:choose>
+                                                                                    <c:when test="${t.getStatus() == ConstantDefinition.SV_INVALID}">
+                                                                                        <input type="text" readonly="readonly" value="已失效……"/>
+                                                                                    </c:when>
+
+                                                                                    <c:when test="${t.getStatus() == ConstantDefinition.SV_WAITING}">
+                                                                                        <input type="text" readonly="readonly" value="进行中……"/>
+                                                                                    </c:when>
+                                                                                </c:choose>
                                                                             </c:otherwise>
                                                                         </c:choose>
                                                                     </div>

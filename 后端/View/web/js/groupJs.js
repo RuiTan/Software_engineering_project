@@ -1,4 +1,164 @@
 
+function createSV() {
+    var title = document.getElementById('title').value;
+    var content = document.getElementById('content').value;
+    var punish = document.getElementById('punish').value;
+    var time = document.getElementById('time').value;
+    // alert(title+ content + time + members);
+    var ok = true;
+    if (title.length <= 0 ){
+        swal({
+            title : "Error",
+            text : "标题不能为空！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }else if (title.length >= 10){
+        swal({
+            title : "Error",
+            text : "标题长度超出限制",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (content.length <= 10 || content.length >= 80){
+        swal({
+            title : "Error",
+            text : "内容长度需要在10-80个字之间！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (time <= 10 || time >= 6000){
+        swal({
+            title : "Error",
+            text : "有效时间需在10-6000分钟之间！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (title.length <= 0 ){
+        swal({
+            title : "Error",
+            text : "惩罚不能为空！",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }else if (title.length >= 30){
+        swal({
+            title : "Error",
+            text : "惩罚长度超出限制",
+            type : "warning",
+            cancelButtonText : "No"
+        });
+        ok = false;
+    }
+    if (ok){
+        $.ajax({
+            type: 'post',
+            url: 'createSV',
+            data: {
+                title: title,
+                content: content,
+                punish: punish,
+                time: time
+            },
+            success: function (data) {
+                // alert(data);
+                if (data == '1'){
+                    swal({
+                        title : "Success",
+                        text : "监督发布成功！"
+                    });
+                    var url = 'window.location.href = \'supervision\'';
+                    setTimeout(url ,2000);
+                }else if (data == '3'){
+                    window.location.href = 'index';
+                }else{
+                    window.location.href = 'login.jsp';
+                }
+            }
+        });
+    }
+}
+
+function cancelSV(sid) {
+    $.ajax({
+        type: 'post',
+        url: 'cancelSV',
+        data: {
+            sid: sid
+        },
+        success: function (data) {
+            if (data == '1'){
+                swal({
+                    title: "Success",
+                    text: "取消监督成功！"
+                });
+                var url = 'window.location.href = \'supervision\'';
+                setTimeout(url ,2000);
+            }else if(data == '4'){
+                window.location.href = 'login.jsp';
+            }else{
+                window.location.href = 'index';
+            }
+        }
+    });
+}
+
+function supervise(sid) {
+    $.ajax({
+        type: 'post',
+        url: 'supervise',
+        data: {
+            sid: sid
+        },
+        success: function (data) {
+            if (data == '1'){
+                swal({
+                    title: "Success",
+                    text: "加入监督成功！"
+                });
+                var url = 'window.location.href = \'supervision\'';
+                setTimeout(url ,2000);
+            }else if(data == '4'){
+                window.location.href = 'login.jsp';
+            }else{
+                window.location.href = 'index';
+            }
+        }
+    });
+}
+
+function supervised(sid) {
+    $.ajax({
+        type: 'post',
+        url: 'supervised',
+        data: {
+            sid: sid
+        },
+        success: function (data) {
+            if (data == '1'){
+                swal({
+                    title: "Success",
+                    text: "加入被监督成功！"
+                });
+                var url = 'window.location.href = \'supervision\'';
+                setTimeout(url ,2000);
+            }else if(data == '4'){
+                window.location.href = 'login.jsp';
+            }else{
+                window.location.href = 'index';
+            }
+        }
+    });
+}
+
 function changeStatus() {
     var status = document.getElementById('status').value;
     if (status.length <= 1 || status.length >= 20){
@@ -189,7 +349,7 @@ function createTask() {
                 members: members
             },
             success: function (data) {
-                alert(data);
+                // alert(data);
                 if (data == '1'){
                     swal({
                         title : "Success",
@@ -397,7 +557,7 @@ function createNotice() {
     }
 }
 function allow(uid, gid) {
-    alert(uid + ',' + gid);
+    // alert(uid + ',' + gid);
     $.ajax({
         type: 'post',
         url: '/allow',

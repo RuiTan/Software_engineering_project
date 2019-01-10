@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import top.guitoubing.mapper.MessageMapper;
+import top.guitoubing.mapper.SupervisionMapper;
 import top.guitoubing.mapper.UserInGroupMapper;
 import top.guitoubing.mapper.UserMapper;
 import top.guitoubing.pojo.Data.NotificationData;
@@ -46,6 +47,8 @@ public class MybatisTest {
     @Autowired
     TaskService taskService;
 
+    @Autowired
+    SupervisionMapper supervisionMapper;
 
     @Test
     public void test() throws ParseException {
@@ -72,7 +75,12 @@ public class MybatisTest {
 //        System.out.println(userMapper.selectTaskByGroup(1));
 //        System.out.println(userMapper.selectTaskByReply(2));
 //        System.out.println(userInGroupMapper.countUsers(1));
-        taskService.achiveTask(1, new Group(), new User());
+//        taskService.achiveTask(1, new Group(), new User());
+//        System.out.println(supervisionMapper.selectSVByGroup(1));
+//        System.out.println(supervisionMapper.selectSVBySupervised(1));
+//        System.out.println(supervisionMapper.selectSVBySupervisor(1));
+        System.out.println(supervisionMapper.selectUserBySupervised(1));
+        System.out.println(supervisionMapper.selectUserBySupervisor(1));
     }
 //
 //    @Test

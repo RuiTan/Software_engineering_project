@@ -31,4 +31,8 @@ public class TimeUtil {
         return res;
     }
 
+    public static Long currentStamp(){
+        return new Date().getTime()/1000;
+    }
+
 }
