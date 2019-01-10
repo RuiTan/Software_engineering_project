@@ -5,7 +5,7 @@
          version="2.5">
     
     <welcome-file-list>
-        <welcome-file>/index</welcome-file>
+        <welcome-file>/login.jsp</welcome-file>
     </welcome-file-list>
 
     <!-- spring的配置文件-->

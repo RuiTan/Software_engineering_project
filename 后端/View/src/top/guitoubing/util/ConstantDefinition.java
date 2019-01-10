@@ -63,4 +63,13 @@ public class ConstantDefinition {
     public static final Integer REPLY_TASK_ACCEPT = 2;
     public static final Integer REPLY_TASK_REFUSE = 3;
 
+    // Supervision Status
+    public static final String SV_UNREADY = "1";
+    public static final String SV_WAITING = "2";
+    public static final String SV_FINISHED = "3";
+    public static final String SV_INVALID = "4";
+    public static final Integer SV_NOT_IN = 0;
+    public static final Integer SUPERVISOR = 2;
+    public static final Integer SUPERVISED = 1;
+
 }

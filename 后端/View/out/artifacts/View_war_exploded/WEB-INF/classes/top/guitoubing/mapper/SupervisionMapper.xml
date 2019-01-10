@@ -15,10 +15,53 @@
       <arg column="STATUS_" javaType="java.lang.String" jdbcType="VARCHAR" />
     </constructor>
   </resultMap>
+  <resultMap id="SupervisionData1" type="top.guitoubing.pojo.Data.SupervisionData">
+    <constructor>
+      <arg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="TITLE_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CONTENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="PUNISHMENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="STARTDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="ENDDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="STATUS_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="TYPE_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+    </constructor>
+  </resultMap>
   <sql id="Base_Column_List">
     ID_, TITLE_, CONTENT_, PUNISHMENT_, CREATEDATE_, STARTDATE_, ENDDATE_, CREATOR_, 
     GROUPID_, STATUS_
   </sql>
+  <select id="maxId" resultType="java.lang.Integer">
+    SELECT max(id_) from SUPERVISION_
+  </select>
+  <select id="selectUserBySupervisor" parameterType="java.lang.Integer" resultType="java.lang.String">
+    select USER_.NAME_ from USER_, SUPERVISE_
+    where SUPERVISE_.SUPID_=#{id,jdbcType=DECIMAL} and USER_.ID_=SUPERVISE_.USERID_ and SUPERVISE_.TYPE_=2
+  </select>
+  <select id="selectUserBySupervised" parameterType="java.lang.Integer" resultType="java.lang.String">
+    select USER_.NAME_ from USER_, SUPERVISE_
+    where SUPERVISE_.SUPID_=#{id,jdbcType=DECIMAL} and USER_.ID_=SUPERVISE_.USERID_ and SUPERVISE_.TYPE_=1
+  </select>
+  <select id="selectSVByGroup" parameterType="java.lang.Integer" resultMap="SupervisionData1">
+    select SUPERVISION_.*, USER_.NAME_, user_.AVATOR_, 0 TYPE_
+    from SUPERVISION_, USER_
+    where SUPERVISION_.GROUPID_ = #{id,jdbcType=DECIMAL} and SUPERVISION_.CREATOR_=USER_.ID_
+  </select>
+  <select id="selectSVBySupervised" parameterType="java.lang.Integer" resultMap="SupervisionData1">
+    select SUPERVISION_.*, USER_.NAME_, user_.AVATOR_, TYPE_
+    from SUPERVISION_, USER_, SUPERVISE_
+    where SUPERVISION_.CREATOR_=USER_.ID_ and SUPERVISE_.USERID_=#{id, jdbcType=DECIMAL} and SUPERVISE_.SUPID_=SUPERVISION_.ID_ and SUPERVISE_.TYPE_=1
+  </select>
+  <select id="selectSVBySupervisor" parameterType="java.lang.Integer" resultMap="SupervisionData1">
+    select SUPERVISION_.*, USER_.NAME_, user_.AVATOR_, TYPE_
+    from SUPERVISION_, USER_, SUPERVISE_
+    where SUPERVISION_.CREATOR_=USER_.ID_ and SUPERVISE_.USERID_=#{id, jdbcType=DECIMAL} and SUPERVISE_.SUPID_=SUPERVISION_.ID_ and SUPERVISE_.TYPE_=2
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

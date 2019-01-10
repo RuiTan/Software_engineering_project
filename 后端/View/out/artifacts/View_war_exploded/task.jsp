@@ -414,11 +414,18 @@
                                                                                     </c:when>
                                                                                 </c:choose>
                                                                             </c:when>
-                                                                            <c:otherwise>
+
+                                                                            <c:when test="${t.getStatus() == ConstantDefinition.TASK_UNDERWAY}">
+
                                                                                 <div class="ui three buttons">
                                                                                     <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
                                                                                     <div class="ui basic blue button">已接受</div>
                                                                                     <div class="ui basic red button" onclick="refuseTask(${t.getId()})">拒绝</div>
+                                                                                </div>
+                                                                            </c:when>
+                                                                            <c:otherwise>
+                                                                                <div class="ui one buttons">
+                                                                                    <div class="ui basic green button" onclick="openModal(${t.getId()})">查看详情</div>
                                                                                 </div>
                                                                             </c:otherwise>
                                                                         </c:choose>

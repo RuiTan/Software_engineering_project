@@ -12,10 +12,7 @@ import top.guitoubing.pojo.Data.ProfileData;
 import top.guitoubing.pojo.Group;
 import top.guitoubing.pojo.Notification;
 import top.guitoubing.pojo.User;
-import top.guitoubing.service.GroupService;
-import top.guitoubing.service.NotificationService;
-import top.guitoubing.service.ProfileService;
-import top.guitoubing.service.TaskService;
+import top.guitoubing.service.*;
 import top.guitoubing.util.CheckUser;
 import top.guitoubing.util.ConstantDefinition;
 import top.guitoubing.util.TimeUtil;
@@ -39,6 +36,9 @@ public class GroupController {
 
     @Autowired
     TaskService taskService;
+
+    @Autowired
+    SupervisionService supervisionService;
 
     @RequestMapping("group")
     ModelAndView group(HttpServletRequest request, @RequestParam Integer id){
@@ -259,4 +259,86 @@ public class GroupController {
         profileService.updateUser(user);
         return ConstantDefinition.CREATE_NOTICE_SUCCEED;
     }
+
+    @RequestMapping("supervision")
+    ModelAndView supervision(HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return new ModelAndView("redirect:/login.jsp");
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return new ModelAndView("redirect:/index");
+        }
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("supervision");
+        ProfileData profileData = profileService.getProfileData(user);
+        modelAndView.addObject("data",profileData);
+        modelAndView.addObject("group",group);
+        modelAndView.addObject("supervision", supervisionService.getSupervisionData(group.getId(), user));
+        return modelAndView;
+    }
+
+    @RequestMapping("cancelSV")
+    @ResponseBody
+    Integer cancelSV(Integer sid, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        supervisionService.cancelSupervision(sid);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("supervise")
+    @ResponseBody
+    Integer supervise(Integer sid, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        supervisionService.supervise(sid, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("supervised")
+    @ResponseBody
+    Integer supervised(Integer sid, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        supervisionService.supervised(sid, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
+    @RequestMapping("createSV")
+    @ResponseBody
+    Integer createSV(String title, String content, String punish, Integer time, HttpServletRequest request){
+        User user = (User) request.getSession().getAttribute(ConstantDefinition.USERSESSION);
+        if (!CheckUser.checkUser(user)){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_USER;
+        }
+        Group group = (Group) request.getSession().getAttribute(ConstantDefinition.GROUP_SESSION);
+        if (group == null ){
+            return ConstantDefinition.CREATE_NOTICE_WRONG_GROUP;
+        }
+        Long now = new Date().getTime()/1000;
+        Long limit = now+time*60;
+        supervisionService.createSupervision(title, content, punish, now, limit, group, user);
+        return ConstantDefinition.CREATE_NOTICE_SUCCEED;
+    }
+
 }

@@ -7,39 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c13f1dfc-9978-4c1d-bfc5-ce4e618b6988" name="Default Changelist" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/GroupUsersData.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/TaskData.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/TaskService.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/inbox.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/groupJs.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/task.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/web/task.jsp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/SupervisionData.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/SupervisionService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/impl/SupervisionServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/supervision.jsp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/TaskMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/TaskMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/UserInGroupMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/UserInGroupMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/UserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/group.jsp" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/group.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/notice.jsp" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/notice.jsp" />
-      <change beforePath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/TaskMapper.xml" afterPath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/TaskMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/UserInGroupMapper.xml" afterPath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/UserInGroupMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/js/groupJs.js" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/js/groupJs.js" />
+      <change beforePath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/SupervisionMapper.xml" afterPath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/SupervisionMapper.xml" />
       <change beforePath="$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.xml" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.xml" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/service/NotificationService.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/NotificationService.java" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/service/impl/NotificationServiceImpl.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/impl/NotificationServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.xml" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.xml" />
       <change beforePath="$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java" />
       <change beforePath="$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java" />
-      <change beforePath="$PROJECT_DIR$/web/group.jsp" afterPath="$PROJECT_DIR$/web/group.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/web/notice.jsp" afterPath="$PROJECT_DIR$/web/notice.jsp" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/util/TimeUtil.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/util/TimeUtil.java" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/web/js/groupJs.js" afterPath="$PROJECT_DIR$/web/js/groupJs.js" />
+      <change beforePath="$PROJECT_DIR$/web/task.jsp" afterPath="$PROJECT_DIR$/web/task.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/MybatisGenerator/target/" />
@@ -174,107 +157,107 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="SupervisionServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/SupervisionServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="278">
+              <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupervisionMapper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="397">
+              <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupervisionMapper.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="19" />
+              <folding>
+                <marker date="1547131059547" expanded="true" signature="2479:2512" ph="SELECT max(i... SUPERVISION_" />
+                <marker date="1547131059547" expanded="true" signature="2632:2780" ph="select USER_... USER_" />
+                <marker date="1547131059547" expanded="true" signature="2900:3048" ph="select USER_... USER_" />
+                <marker date="1547131059547" expanded="true" signature="3160:3340" ph="select SUPER... SUPERVISION_" />
+                <marker date="1547131059547" expanded="true" signature="3457:3705" ph="select SUPER... SUPERVISION_" />
+                <marker date="1547131059547" expanded="true" signature="3822:4070" ph="select SUPER... SUPERVISION_" />
+                <marker date="1547131059547" expanded="true" signature="4182:4291" ph="select from SUPERVISION_" />
+                <marker date="1547131059547" expanded="true" signature="4377:4440" ph="delete from SUPERVISION_... " />
+                <marker date="1547131059547" expanded="true" signature="4528:4997" ph="insert into SUPERVISION_... " />
+                <marker date="1547131059547" expanded="true" signature="6834:7774" ph="update SUPERVISION_... " />
+                <marker date="1547131059547" expanded="true" signature="7874:8357" ph="update SUPERVISION_... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Supervision.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Supervision.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+              <folding>
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#901#902#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TaskServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="143">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/task.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="1263" column="0" lean-forward="true" selection-start-line="1263" selection-start-column="0" selection-end-line="1263" selection-end-column="0" />
+              <folding>
+                <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="task.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/task.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="390" column="82" lean-forward="false" selection-start-line="390" selection-start-column="82" selection-end-line="390" selection-end-column="82" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="GroupController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="259" column="56" lean-forward="false" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
+            <state relative-caret-position="332">
+              <caret line="340" column="56" lean-forward="false" selection-start-line="340" selection-start-column="56" selection-end-line="340" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="inbox.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/inbox.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageData.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/MessageData.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="133" column="13" lean-forward="false" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4092#4093#0" expanded="true" />
-                <element signature="e#4138#4139#0" expanded="true" />
-                <element signature="e#4217#4218#0" expanded="true" />
-                <element signature="e#4273#4274#0" expanded="true" />
-                <element signature="e#4352#4353#0" expanded="true" />
-                <element signature="e#4408#4409#0" expanded="true" />
-                <element signature="e#4991#4992#0" expanded="true" />
-                <element signature="e#5046#5047#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="group.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/group.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="335" column="64" lean-forward="false" selection-start-line="335" selection-start-column="54" selection-end-line="335" selection-end-column="64" />
-              <folding>
-                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -283,22 +266,25 @@
       <file leaf-file-name="groupJs.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/groupJs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="68">
+              <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
               <folding>
-                <element signature="n#!!block;n#createTask#0" expanded="false" />
+                <element signature="n#!!block;n#changeStatus#0" expanded="false" />
                 <element signature="n#!!block;n#editNotif#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/User.java">
+      <file leaf-file-name="supervision.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/supervision.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="101" column="31" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="31" />
-              <folding />
+            <state relative-caret-position="833">
+              <caret line="375" column="124" lean-forward="true" selection-start-line="375" selection-start-column="124" selection-end-line="375" selection-end-column="124" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -310,17 +296,14 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
-        <option value="Interface" />
         <option value="JavaScript File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nb</find>
-      <find>agree</find>
-      <find>func</find>
       <find>处理</find>
       <find>进入</find>
       <find>agree2</find>
@@ -348,6 +331,9 @@
       <find>n.</find>
       <find>575</find>
       <find>c:choose</find>
+      <find>alert</find>
+      <find>process</find>
+      <find>column grid stackable</find>
     </findStrings>
     <replaceStrings>
       <replace>top.guitoubing.</replace>
@@ -373,12 +359,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/LoginService.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/LoginServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/MybatisGenerator/src/main/resources/generator.properties" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/MessageMapper.java" />
-        <option value="$PROJECT_DIR$/MybatisGenerator/src/main/resources/generatorConfig.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/GroupMapper.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/GroupMapper.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/MessageData.java" />
@@ -388,7 +368,6 @@
         <option value="$PROJECT_DIR$/web/invite.jsp" />
         <option value="$PROJECT_DIR$/web/js/customjs/custom-modal.js" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TagMapper.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TagMapper.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/ProfileData.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/ProfileServiceImpl.java" />
@@ -397,33 +376,40 @@
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/MessageMapper.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/web/search.jsp" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/util/TimeUtil.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/NotificationMapper.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/NotificationMapper.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/NotificationData.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/service/NotificationService.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/NotificationServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/notice.jsp" />
-        <option value="$PROJECT_DIR$/web/task.html" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.xml" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/TaskData.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/service/TaskService.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/task.jsp" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/GroupUsersData.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java" />
         <option value="$PROJECT_DIR$/web/group.jsp" />
-        <option value="$PROJECT_DIR$/web/js/groupJs.js" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/task.html" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/util/TimeUtil.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/SupervisionData.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/SupervisionService.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/SupervisionServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/supervision.jsp" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java" />
+        <option value="$PROJECT_DIR$/web/js/groupJs.js" />
+        <option value="$PROJECT_DIR$/web/task.jsp" />
       </list>
     </option>
   </component>
@@ -503,7 +489,48 @@
             <path>
               <item name="View" type="b2602c69:ProjectViewProjectNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guitoubing" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="View" type="b2602c69:ProjectViewProjectNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guitoubing" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="View" type="b2602c69:ProjectViewProjectNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guitoubing" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="View" type="b2602c69:ProjectViewProjectNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guitoubing" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="View" type="b2602c69:ProjectViewProjectNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="View" type="b2602c69:ProjectViewProjectNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="View" type="b2602c69:ProjectViewProjectNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="View" type="b2602c69:ProjectViewProjectNode" />
@@ -724,47 +751,48 @@
       <workItem from="1545721093715" duration="22000" />
       <workItem from="1546065068027" duration="50000" />
       <workItem from="1546947871817" duration="5834000" />
-      <workItem from="1546962684147" duration="84714000" />
+      <workItem from="1546962684147" duration="96783000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MybatisTest - 2019.01.10 at 14h 09m 00s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 10m 03s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 14h 09m 39s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 10m 30s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 14h 13m 00s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 13m 23s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 14h 13m 16s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 13m 35s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 14h 14m 07s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 13m 48s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 15h 55m 23s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 14m 31s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 15h 55m 32s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 24m 13s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 16h 57m 58s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 24m 25s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 17h 33m 55s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 25m 17s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.10 at 19h 33m 59s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 22h 25m 45s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147205000" />
+    <option name="totallyTimeSpent" value="159274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="882" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
@@ -787,7 +815,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18696275" sideWeight="0.4927235" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18696275" sideWeight="0.4927235" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18696275" sideWeight="0.50727654" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32751676" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -847,13 +875,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java</url>
-          <line>59</line>
+          <line>62</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java</url>
-          <line>55</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
@@ -871,36 +899,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java</url>
-          <line>64</line>
+          <line>67</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java</url>
-          <line>67</line>
+          <line>70</line>
           <properties />
           <option name="timeStamp" value="35" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java</url>
-          <line>51</line>
-          <properties />
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java</url>
-          <line>83</line>
-          <properties />
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="57" />
+      <option name="time" value="58" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -909,118 +919,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/MessageMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
-          <folding>
-            <marker date="1547055017630" expanded="true" signature="885:1150" ph="select uniqu... " />
-            <marker date="1547055017630" expanded="true" signature="1262:1367" ph="select from MESSAGE_" />
-            <marker date="1547055017630" expanded="true" signature="1453:1512" ph="delete from MESSAGE_... " />
-            <marker date="1547055017630" expanded="true" signature="1596:1814" ph="insert into MESSAGE_... " />
-            <marker date="1547055017630" expanded="true" signature="2856:3286" ph="update MESSAGE_... " />
-            <marker date="1547055017630" expanded="true" signature="3382:3607" ph="update MESSAGE_... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/ProfileServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1497#1498#0" expanded="true" />
-            <element signature="e#1548#1549#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/UserInGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <element signature="e#356#357#0" expanded="false" />
-            <element signature="e#379#380#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/plugins/sweetalert2/custom-alert.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2244">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/search.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="88" column="50" lean-forward="false" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/LoginServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/util/CheckUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/plugins/datedropper/datedropper.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="0" column="18673" lean-forward="false" selection-start-line="0" selection-start-column="18673" selection-end-line="0" selection-end-column="18673" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/util/TimeUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/plugins/echarts/echarts.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="13" column="26902" lean-forward="false" selection-start-line="13" selection-start-column="26902" selection-end-line="13" selection-end-column="26902" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/NotificationMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Notification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
@@ -1139,20 +1037,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/task.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="1141" column="8" lean-forward="false" selection-start-line="1141" selection-start-column="8" selection-end-line="1290" selection-end-column="14" />
-          <folding>
-            <element signature="n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1244,14 +1128,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/ReplyTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1274,20 +1150,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/TaskService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
           <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1300,16 +1168,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/TaskData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -1318,60 +1176,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/task.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-807">
-          <caret line="621" column="62" lean-forward="true" selection-start-line="621" selection-start-column="62" selection-end-line="621" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/GroupUsersData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="30" />
-          <folding>
-            <marker date="1547122921252" expanded="true" signature="6994:7095" ph="select USER_... USER_" />
-            <marker date="1547122921252" expanded="true" signature="7207:7460" ph="select TASK_... TASK_" />
-            <marker date="1547122921252" expanded="true" signature="7574:7729" ph="select TASK_... TASK_" />
-            <marker date="1547122921252" expanded="true" signature="7841:7996" ph="select TASK_... TASK_" />
-            <marker date="1547122921252" expanded="true" signature="8116:8337" ph="select NOTIF... NOTIFICATION_" />
-            <marker date="1547122921252" expanded="true" signature="8457:8609" ph="select NOTIF... NOTIFICATION_" />
-            <marker date="1547122921252" expanded="true" signature="8712:8987" ph="select USERI... USERINGROUP_" />
-            <marker date="1547122921252" expanded="true" signature="9094:9293" ph="select GROUP... MESSAGE_" />
-            <marker date="1547122921252" expanded="true" signature="9094:9320" ph="select GROUP... MESSAGE_" />
-            <marker date="1547122921252" expanded="true" signature="9428:9547" ph="select count... TASK_" />
-            <marker date="1547122921252" expanded="true" signature="9653:9786" ph="select count... SUPERVISION_" />
-            <marker date="1547122921252" expanded="true" signature="9896:10031" ph="select count... NOTIFICATION_" />
-            <marker date="1547122921252" expanded="true" signature="10134:10189" ph="select * FRO... group_" />
-            <marker date="1547122921252" expanded="true" signature="10296:10522" ph="SELECT group... group_" />
-            <marker date="1547122921252" expanded="true" signature="10296:10549" ph="SELECT group... group_" />
-            <marker date="1547122921252" expanded="true" signature="10669:11048" ph="select uniqu... " />
-            <marker date="1547122921252" expanded="true" signature="11164:11416" ph="select group... GROUP_" />
-            <marker date="1547122921252" expanded="true" signature="11492:11698" ph="select group... group" />
-            <marker date="1547122921252" expanded="true" signature="11492:11699" ph="select uniqu... " />
-            <marker date="1547122921252" expanded="true" signature="11812:12065" ph="SELECT group... group_" />
-            <marker date="1547122921252" expanded="true" signature="12135:12161" ph="select max(I... user_" />
-            <marker date="1547122921252" expanded="true" signature="12237:12264" ph="select max(I... group_" />
-            <marker date="1547122921252" expanded="true" signature="12372:12482" ph="select from USER_" />
-            <marker date="1547122921252" expanded="true" signature="12594:12696" ph="select from USER_" />
-            <marker date="1547122921252" expanded="true" signature="12782:12838" ph="delete from USER_... " />
-            <marker date="1547122921252" expanded="true" signature="12932:13219" ph="insert into GROUP_... " />
-            <marker date="1547122921252" expanded="true" signature="13302:13704" ph="insert into USER_... " />
-            <marker date="1547122921252" expanded="true" signature="15330:16137" ph="update USER_... " />
-            <marker date="1547122921252" expanded="true" signature="16230:16639" ph="update USER_... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1448,45 +1257,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="259" column="56" lean-forward="false" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/group.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="335" column="64" lean-forward="false" selection-start-line="335" selection-start-column="54" selection-end-line="335" selection-end-column="64" />
-          <folding>
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/groupJs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!block;n#createTask#0" expanded="false" />
-            <element signature="n#!!block;n#editNotif#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="422">
@@ -1515,8 +1285,320 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="0">
           <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/group.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="335" column="64" lean-forward="false" selection-start-line="335" selection-start-column="54" selection-end-line="335" selection-end-column="64" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="30" />
+          <folding>
+            <marker date="1547122921252" expanded="true" signature="6994:7095" ph="select USER_... USER_" />
+            <marker date="1547122921252" expanded="true" signature="7207:7460" ph="select TASK_... TASK_" />
+            <marker date="1547122921252" expanded="true" signature="7574:7729" ph="select TASK_... TASK_" />
+            <marker date="1547122921252" expanded="true" signature="7841:7996" ph="select TASK_... TASK_" />
+            <marker date="1547122921252" expanded="true" signature="8116:8337" ph="select NOTIF... NOTIFICATION_" />
+            <marker date="1547122921252" expanded="true" signature="8457:8609" ph="select NOTIF... NOTIFICATION_" />
+            <marker date="1547122921252" expanded="true" signature="8712:8987" ph="select USERI... USERINGROUP_" />
+            <marker date="1547122921252" expanded="true" signature="9094:9293" ph="select GROUP... MESSAGE_" />
+            <marker date="1547122921252" expanded="true" signature="9094:9320" ph="select GROUP... MESSAGE_" />
+            <marker date="1547122921252" expanded="true" signature="9428:9547" ph="select count... TASK_" />
+            <marker date="1547122921252" expanded="true" signature="9653:9786" ph="select count... SUPERVISION_" />
+            <marker date="1547122921252" expanded="true" signature="9896:10031" ph="select count... NOTIFICATION_" />
+            <marker date="1547122921252" expanded="true" signature="10134:10189" ph="select * FRO... group_" />
+            <marker date="1547122921252" expanded="true" signature="10296:10522" ph="SELECT group... group_" />
+            <marker date="1547122921252" expanded="true" signature="10296:10549" ph="SELECT group... group_" />
+            <marker date="1547122921252" expanded="true" signature="10669:11048" ph="select uniqu... " />
+            <marker date="1547122921252" expanded="true" signature="11164:11416" ph="select group... GROUP_" />
+            <marker date="1547122921252" expanded="true" signature="11492:11698" ph="select group... group" />
+            <marker date="1547122921252" expanded="true" signature="11492:11699" ph="select uniqu... " />
+            <marker date="1547122921252" expanded="true" signature="11812:12065" ph="SELECT group... group_" />
+            <marker date="1547122921252" expanded="true" signature="12135:12161" ph="select max(I... user_" />
+            <marker date="1547122921252" expanded="true" signature="12237:12264" ph="select max(I... group_" />
+            <marker date="1547122921252" expanded="true" signature="12372:12482" ph="select from USER_" />
+            <marker date="1547122921252" expanded="true" signature="12594:12696" ph="select from USER_" />
+            <marker date="1547122921252" expanded="true" signature="12782:12838" ph="delete from USER_... " />
+            <marker date="1547122921252" expanded="true" signature="12932:13219" ph="insert into GROUP_... " />
+            <marker date="1547122921252" expanded="true" signature="13302:13704" ph="insert into USER_... " />
+            <marker date="1547122921252" expanded="true" signature="15330:16137" ph="update USER_... " />
+            <marker date="1547122921252" expanded="true" signature="16230:16639" ph="update USER_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="82" column="69" lean-forward="false" selection-start-line="82" selection-start-column="69" selection-end-line="82" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/util/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="34" column="41" lean-forward="false" selection-start-line="34" selection-start-column="41" selection-end-line="34" selection-end-column="41" />
+          <folding>
+            <element signature="e#891#892#0" expanded="true" />
+            <element signature="e#939#940#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="70" column="46" lean-forward="false" selection-start-line="70" selection-start-column="46" selection-end-line="70" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/extra_colors.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="53" column="19" lean-forward="false" selection-start-line="53" selection-start-column="13" selection-end-line="53" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/SupervisionData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="182" column="41" lean-forward="false" selection-start-line="182" selection-start-column="41" selection-end-line="182" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2086#2087#0" expanded="true" />
+            <element signature="e#2111#2112#0" expanded="true" />
+            <element signature="e#2148#2149#0" expanded="true" />
+            <element signature="e#2176#2177#0" expanded="true" />
+            <element signature="e#2208#2209#0" expanded="true" />
+            <element signature="e#2236#2237#0" expanded="true" />
+            <element signature="e#2278#2279#0" expanded="true" />
+            <element signature="e#2312#2313#0" expanded="true" />
+            <element signature="e#2346#2347#0" expanded="true" />
+            <element signature="e#2376#2377#0" expanded="true" />
+            <element signature="e#2422#2423#0" expanded="true" />
+            <element signature="e#2460#2461#0" expanded="true" />
+            <element signature="e#2497#2498#0" expanded="true" />
+            <element signature="e#2530#2531#0" expanded="true" />
+            <element signature="e#2582#2583#0" expanded="true" />
+            <element signature="e#2626#2627#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
+            <element signature="e#2694#2695#0" expanded="true" />
+            <element signature="e#2744#2745#0" expanded="true" />
+            <element signature="e#2788#2789#0" expanded="true" />
+            <element signature="e#2822#2823#0" expanded="true" />
+            <element signature="e#2854#2855#0" expanded="true" />
+            <element signature="e#2902#2903#0" expanded="true" />
+            <element signature="e#2944#2945#0" expanded="true" />
+            <element signature="e#2976#2977#0" expanded="true" />
+            <element signature="e#3006#3007#0" expanded="true" />
+            <element signature="e#3050#3051#0" expanded="true" />
+            <element signature="e#3088#3089#0" expanded="true" />
+            <element signature="e#3123#3124#0" expanded="true" />
+            <element signature="e#3153#3154#0" expanded="true" />
+            <element signature="e#3200#3201#0" expanded="true" />
+            <element signature="e#3238#3239#0" expanded="true" />
+            <element signature="e#3273#3274#0" expanded="true" />
+            <element signature="e#3303#3304#0" expanded="true" />
+            <element signature="e#3350#3351#0" expanded="true" />
+            <element signature="e#3388#3389#0" expanded="true" />
+            <element signature="e#3421#3422#0" expanded="true" />
+            <element signature="e#3450#3451#0" expanded="true" />
+            <element signature="e#3494#3495#0" expanded="true" />
+            <element signature="e#3530#3531#0" expanded="true" />
+            <element signature="e#3568#3569#0" expanded="true" />
+            <element signature="e#3602#3603#0" expanded="true" />
+            <element signature="e#3656#3657#0" expanded="true" />
+            <element signature="e#3702#3703#0" expanded="true" />
+            <element signature="e#3735#3736#0" expanded="true" />
+            <element signature="e#3764#3765#0" expanded="true" />
+            <element signature="e#3808#3809#0" expanded="true" />
+            <element signature="e#3844#3845#0" expanded="true" />
+            <element signature="e#3876#3877#0" expanded="true" />
+            <element signature="e#3903#3904#0" expanded="true" />
+            <element signature="e#3944#3945#0" expanded="true" />
+            <element signature="e#3976#3977#0" expanded="true" />
+            <element signature="e#4052#4053#0" expanded="true" />
+            <element signature="e#4110#4111#0" expanded="true" />
+            <element signature="e#4154#4155#0" expanded="true" />
+            <element signature="e#4197#4198#0" expanded="true" />
+            <element signature="e#4230#4231#0" expanded="true" />
+            <element signature="e#4288#4289#0" expanded="true" />
+            <element signature="e#4332#4333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/SuperviseKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#263#264#0" expanded="false" />
+            <element signature="e#286#287#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Supervise.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="11" lean-forward="false" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <element signature="e#253#254#0" expanded="false" />
+            <element signature="e#276#277#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/SupervisionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="19" column="93" lean-forward="false" selection-start-line="19" selection-start-column="93" selection-end-line="19" selection-end-column="93" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/SupervisionMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="19" />
+          <folding>
+            <marker date="1547131059547" expanded="true" signature="2479:2512" ph="SELECT max(i... SUPERVISION_" />
+            <marker date="1547131059547" expanded="true" signature="2632:2780" ph="select USER_... USER_" />
+            <marker date="1547131059547" expanded="true" signature="2900:3048" ph="select USER_... USER_" />
+            <marker date="1547131059547" expanded="true" signature="3160:3340" ph="select SUPER... SUPERVISION_" />
+            <marker date="1547131059547" expanded="true" signature="3457:3705" ph="select SUPER... SUPERVISION_" />
+            <marker date="1547131059547" expanded="true" signature="3822:4070" ph="select SUPER... SUPERVISION_" />
+            <marker date="1547131059547" expanded="true" signature="4182:4291" ph="select from SUPERVISION_" />
+            <marker date="1547131059547" expanded="true" signature="4377:4440" ph="delete from SUPERVISION_... " />
+            <marker date="1547131059547" expanded="true" signature="4528:4997" ph="insert into SUPERVISION_... " />
+            <marker date="1547131059547" expanded="true" signature="6834:7774" ph="update SUPERVISION_... " />
+            <marker date="1547131059547" expanded="true" signature="7874:8357" ph="update SUPERVISION_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Supervision.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+          <folding>
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#901#902#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/supervision.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="833">
+          <caret line="375" column="124" lean-forward="true" selection-start-line="375" selection-start-column="124" selection-end-line="375" selection-end-column="124" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/SupervisionServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="81" column="46" lean-forward="true" selection-start-line="81" selection-start-column="46" selection-end-line="81" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="340" column="56" lean-forward="false" selection-start-line="340" selection-start-column="56" selection-end-line="340" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/groupJs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="73" column="26" lean-forward="true" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!block;n#changeStatus#0" expanded="false" />
+            <element signature="n#!!block;n#editNotif#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/task.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="1263" column="0" lean-forward="true" selection-start-line="1263" selection-start-column="0" selection-end-line="1263" selection-end-column="0" />
+          <folding>
+            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/task.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="390" column="82" lean-forward="false" selection-start-line="390" selection-start-column="82" selection-end-line="390" selection-end-column="82" />
           <folding />
         </state>
       </provider>
