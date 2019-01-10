@@ -14,9 +14,130 @@
       <arg column="STATUS_DESC_" javaType="java.lang.String" jdbcType="VARCHAR" />
     </constructor>
   </resultMap>
+  <resultMap id="GroupResultMap" type="top.guitoubing.pojo.Group">
+    <constructor>
+      <idArg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="INTRO_" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <resultMap id="GroupSearchResultMap" type="top.guitoubing.pojo.Data.GroupSearchData">
+    <constructor>
+      <arg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GNAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="INTRO_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="UNAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="STATUS_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+    </constructor>
+  </resultMap>
+  <resultMap id="MessageResultMap" type="top.guitoubing.pojo.Data.MessageData">
+    <constructor>
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <arg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="TYPE_" javaType="java.lang.Short" jdbcType="DECIMAL" />
+      <arg column="DATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="ITEMID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+    </constructor>
+  </resultMap>
+  <resultMap id="ApplyResultMap" type="top.guitoubing.pojo.Data.ApplyData">
+    <constructor>
+      <arg column="USERID_" javaType="java.lang.Integer" jdbcType="DECIMAL"/>
+      <arg column="USERNAME_" javaType="java.lang.String" jdbcType="VARCHAR"/>
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL"/>
+      <arg column="GROUPNAME_" javaType="java.lang.String" jdbcType="VARCHAR"/>
+    </constructor>
+  </resultMap>
+  <resultMap id="NotificationResultMap" type="top.guitoubing.pojo.Data.NotificationData">
+    <constructor>
+      <arg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL"/>
+      <arg column="TITLE_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CONTENT_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="STATUS_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="ENDDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="PRIORITY_" javaType="java.lang.Short" jdbcType="DECIMAL" />
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="LIKED_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+    </constructor>
+  </resultMap>
   <sql id="Base_Column_List">
     ID_, NAME_, PASSWORD_, PHONE_, AVATOR_, INTRO_, GENDER_, STATUS_, STATUS_DESC_
   </sql>
+  <select id="selectNotifByLiked" parameterType="java.lang.Integer" resultMap="NotificationResultMap">
+    select NOTIFICATION_.*, USER_.NAME_, USER_.AVATOR_, 1 liked_
+    from NOTIFICATION_, USER_, LIKENOTIF_
+    where CREATOR_=USER_.ID_ and NOTIFICATION_.ID_ = LIKENOTIF_.NOTIF_ID and LIKENOTIF_.USER_ID=#{id,jdbcType=DECIMAL}
+  </select>
+  <select id="selectNotifByGroup" parameterType="java.lang.Integer" resultMap="NotificationResultMap">
+    select NOTIFICATION_.*, USER_.NAME_, USER_.AVATOR_ , 2 liked_
+    from NOTIFICATION_, USER_ where GROUPID_=#{id,jdbcType=DECIMAL} and CREATOR_=USER_.ID_
+  </select>
+  <select id="getApply" parameterType="java.lang.Integer" resultMap="ApplyResultMap">
+    select USERINGROUP_.USERID_, USER_.NAME_ USERNAME_, USERINGROUP_.GROUPID_, GROUP_.NAME_ GROUPNAME_ from USERINGROUP_,USER_,  GROUP_ where USERINGROUP_.GROUPID_=GROUP_.ID_ and GROUP_.CREATOR_=#{id,jdbcType=DECIMAL} and USERINGROUP_.USERID_=USER_.ID_ and USERINGROUP_.STAUTS_=2
+  </select>
+  <select id="getMessage" parameterType="java.lang.Integer" resultMap="MessageResultMap">
+    select GROUP_.NAME_,GROUP_.AVATOR_, MESSAGE_.*
+    from MESSAGE_, GROUP_, USERINGROUP_ where
+      USERID_=#{id,jdbcType=DECIMAL} and USERINGROUP_.GROUPID_=group_.ID_ and MESSAGE_.GROUPID_=GROUP_.ID_ and USERINGROUP_.stauts_=1
+  </select>
+  <select id="countTask" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+    select count(1) from TASK_,USERINGROUP_ where USERID_=#{id,jdbcType=DECIMAL} and USERINGROUP_.GROUPID_ = TASK_.GROUPID_
+  </select>
+  <select id="countSV" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+    select count(1) from SUPERVISION_,USERINGROUP_ where USERID_=#{id,jdbcType=DECIMAL} and USERINGROUP_.GROUPID_ = SUPERVISION_.GROUPID_
+  </select>
+  <select id="countNotice" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+    select count(1) from NOTIFICATION_,USERINGROUP_ where USERID_=#{id,jdbcType=DECIMAL} and USERINGROUP_.GROUPID_ = NOTIFICATION_.GROUPID_
+  </select>
+  <select id="getGroup" parameterType="java.lang.Integer" resultMap="GroupResultMap">
+    select * FROM group_ WHERE ID_ = #{id,jdbcType=DECIMAL}
+  </select>
+  <select id="selectByUser" parameterType="java.lang.Integer" resultMap="GroupResultMap">
+    SELECT group_.ID_, group_.NAME_, group_.creator_, group_.createdate_, group_.avator_, group_.intro_
+    FROM group_, useringroup_
+    WHERE  useringroup_.userid_ = #{id, jdbcType=DECIMAL} and group_.ID_ = useringroup_.groupid_ and useringroup_.stauts_=1
+  </select>
+  <select id="selectGroupByUserIn" parameterType="java.lang.Integer" resultMap="GroupSearchResultMap">
+    select unique(GROUP_.ID_), group_.NAME_ gname_, group_.creator_, group_.createdate_, group_.avator_, group_.intro_,
+    u1.NAME_ uname_, 1 status_
+    from GROUP_, USER_ u1, USERINGROUP_, USER_ u2
+    where GROUP_.CREATOR_ = u1.ID_ and USERINGROUP_.USERID_=#{id,jdbcType=DECIMAL} and USERINGROUP_.USERID_=u2.ID_
+    and USERINGROUP_.STAUTS_=1 and USERINGROUP_.GROUPID_=GROUP_.ID_
+  </select>
+  <select id="selectGroupByKey" parameterType="java.lang.String" resultMap="GroupSearchResultMap">
+    select unique(GROUP_.ID_), group_.NAME_ gname_, group_.creator_, group_.createdate_, group_.avator_, group_.intro_,
+    u1.NAME_ uname_, 1 status_
+    from GROUP_, USER_ u1
+    where GROUP_.CREATOR_ = u1.ID_ and group_.NAME_ like #{id,jdbcType=VARCHAR}
+  </select>
+  <select id="getGroups" resultMap="GroupSearchResultMap">
+    select unique(GROUP_.ID_), group_.NAME_ gname_, group_.creator_, group_.createdate_, group_.avator_, group_.intro_,
+    u1.NAME_ uname_, 1 status_
+    from GROUP_, USER_ u1
+    where GROUP_.CREATOR_ = u1.ID_
+  </select>
+  <select id="selectInviteByUser" parameterType="java.lang.Integer" resultMap="GroupResultMap">
+    SELECT group_.ID_, group_.NAME_, group_.creator_, group_.createdate_, group_.avator_, group_.intro_
+    FROM group_, useringroup_
+    WHERE  useringroup_.userid_ = #{id, jdbcType=DECIMAL} and group_.ID_ = useringroup_.groupid_ and useringroup_.stauts_=2
+  </select>
+
+    <select id="getMaxId" resultType="Integer">
+        select max(ID_) from user_
+    </select>
+    <select id="getMaxGroupId" resultType="Integer">
+        select max(ID_) from group_
+    </select>
   <select id="selectByTel" parameterType="java.lang.String" resultMap="BaseResultMap">
       select
       <include refid="Base_Column_List" />
@@ -33,6 +154,15 @@
     delete from USER_
     where ID_ = #{id,jdbcType=DECIMAL}
   </delete>
+
+    <insert id="insertGroup" parameterType="top.guitoubing.pojo.Group">
+        insert into GROUP_ (ID_, NAME_, CREATOR_,
+        CREATEDATE_, AVATOR_, INTRO_
+        )
+        values (#{id,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{creator,jdbcType=DECIMAL},
+        #{createdate,jdbcType=DECIMAL}, #{avator,jdbcType=VARCHAR}, #{intro,jdbcType=VARCHAR}
+        )
+    </insert>
   <insert id="insert" parameterType="top.guitoubing.pojo.User">
     insert into USER_ (ID_, NAME_, PASSWORD_, 
       PHONE_, AVATOR_, INTRO_, 

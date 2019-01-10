@@ -6,8 +6,17 @@ import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import top.guitoubing.mapper.MessageMapper;
 import top.guitoubing.mapper.UserMapper;
+import top.guitoubing.pojo.Data.NotificationData;
+import top.guitoubing.pojo.Data.ProfileData;
+import top.guitoubing.pojo.Message;
+import top.guitoubing.pojo.User;
+import top.guitoubing.service.LoginService;
+import top.guitoubing.service.ProfileService;
+import top.guitoubing.util.TimeUtil;
 
+import java.text.ParseException;
 import java.util.List;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -17,15 +26,37 @@ public class MybatisTest {
     @Autowired
     UserMapper userMapper;
 
+    @Autowired
+    LoginService loginService;
+
+
+    @Autowired
+    MessageMapper messageMapper;
+
+    @Autowired
+    ProfileService profileService;
+
+
     @Test
-    public void test(){
-        System.out.println(userMapper.selectByTel("18936361545").getName());
-//        System.out.println(trainMapper.selectByPrimaryKey((short) 930));
-//        System.out.println(carrigeMapper.selectByPrimaryKey("91792"));
-//        System.out.println(trainMapper.list().size());
-//        System.out.println(splitReportProbabilityMapper.list());
-//        List<SplitReportProbability> splitReportProbabilities = splitReportProbabilityMapper.selectByDistanceRange(10001);
-//        System.out.println(splitReportProbabilities);
+    public void test() throws ParseException {
+//        System.out.println(loginService.login("18936361545", "tanrui"));
+//        System.out.println(loginService.register("18936361546", "tanrui"));
+//        System.out.println(userMapper.selectByUser(1));
+//        Object o = userMapper.getMessage(1);
+//        System.out.println(userMapper.countTask(1));
+//        System.out.println(userMapper.countSV(1));
+//        System.out.println(userMapper.countNotice(1));
+//        User user = userMapper.selectByTel("18936361545");
+//        ProfileData profileData = profileService.getProfileData(user);
+//        System.out.println(messageMapper.selectByGroupid(1));
+//        System.out.println(userMapper.getApply(1));
+//        System.out.println(userMapper.selectGroupByKey("%大%"));
+//        System.out.println(userMapper.getGroups());
+//        System.out.println(userMapper.selectNotifByGroup(1));
+        List<NotificationData> notificationData = userMapper.selectNotifByGroup(1);
+        List<NotificationData> notificationData2 = userMapper.selectNotifByLiked(1);
+        System.out.println(TimeUtil.stampToDate("1547064249"));
+//        System.out.println(TimeUtil.dateToStamp("01/10/2019 00:00:00"));
     }
 //
 //    @Test

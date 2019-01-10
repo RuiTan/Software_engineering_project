@@ -10,6 +10,9 @@
   <sql id="Base_Column_List">
     ID_, NAME_
   </sql>
+  <select id="maxId" resultType="java.lang.Integer">
+    select max(id_) from tag_
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

@@ -17,6 +17,9 @@
   <sql id="Base_Column_List">
     ID_, TITLE_, CONTENT_, CREATEDATE_, STATUS_, CREATOR_, GROUPID_, ENDDATE_, PRIORITY_
   </sql>
+  <select id="maxId" resultType="java.lang.Integer">
+    select max(id_) FROM notification_
+  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />

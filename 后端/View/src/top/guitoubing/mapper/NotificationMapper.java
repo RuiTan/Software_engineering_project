@@ -14,4 +14,6 @@ public interface NotificationMapper {
     int updateByPrimaryKeySelective(Notification record);
 
     int updateByPrimaryKey(Notification record);
+
+    Integer maxId();
 }

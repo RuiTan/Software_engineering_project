@@ -7,10 +7,12 @@
       <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
       <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
       <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="INTRO_" javaType="java.lang.String" jdbcType="VARCHAR" />
     </constructor>
   </resultMap>
   <sql id="Base_Column_List">
-    ID_, NAME_, CREATOR_, CREATEDATE_
+    ID_, NAME_, CREATOR_, CREATEDATE_, AVATOR_, INTRO_
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
@@ -24,9 +26,11 @@
   </delete>
   <insert id="insert" parameterType="top.guitoubing.pojo.Group">
     insert into GROUP_ (ID_, NAME_, CREATOR_, 
-      CREATEDATE_)
+      CREATEDATE_, AVATOR_, INTRO_
+      )
     values (#{id,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{creator,jdbcType=DECIMAL}, 
-      #{createdate,jdbcType=DECIMAL})
+      #{createdate,jdbcType=DECIMAL}, #{avator,jdbcType=VARCHAR}, #{intro,jdbcType=VARCHAR}
+      )
   </insert>
   <insert id="insertSelective" parameterType="top.guitoubing.pojo.Group">
     insert into GROUP_
@@ -43,6 +47,12 @@
       <if test="createdate != null">
         CREATEDATE_,
       </if>
+      <if test="avator != null">
+        AVATOR_,
+      </if>
+      <if test="intro != null">
+        INTRO_,
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -56,6 +66,12 @@
       </if>
       <if test="createdate != null">
         #{createdate,jdbcType=DECIMAL},
+      </if>
+      <if test="avator != null">
+        #{avator,jdbcType=VARCHAR},
+      </if>
+      <if test="intro != null">
+        #{intro,jdbcType=VARCHAR},
       </if>
     </trim>
   </insert>
@@ -71,6 +87,12 @@
       <if test="createdate != null">
         CREATEDATE_ = #{createdate,jdbcType=DECIMAL},
       </if>
+      <if test="avator != null">
+        AVATOR_ = #{avator,jdbcType=VARCHAR},
+      </if>
+      <if test="intro != null">
+        INTRO_ = #{intro,jdbcType=VARCHAR},
+      </if>
     </set>
     where ID_ = #{id,jdbcType=DECIMAL}
   </update>
@@ -78,7 +100,100 @@
     update GROUP_
     set NAME_ = #{name,jdbcType=VARCHAR},
       CREATOR_ = #{creator,jdbcType=DECIMAL},
-      CREATEDATE_ = #{createdate,jdbcType=DECIMAL}
+      CREATEDATE_ = #{createdate,jdbcType=DECIMAL},
+      AVATOR_ = #{avator,jdbcType=VARCHAR},
+      INTRO_ = #{intro,jdbcType=VARCHAR}
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </update>
+  <resultMap id="BaseResultMap" type="top.guitoubing.pojo.Group">
+    <constructor>
+      <idArg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="NAME_" javaType="java.lang.String" jdbcType="VARCHAR" />
+      <arg column="CREATOR_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="CREATEDATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="AVATOR_" javaType="java.lang.String" jdbcType="VARCHAR" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID_, NAME_, CREATOR_, CREATEDATE_, AVATOR_
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from GROUP_
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from GROUP_
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="top.guitoubing.pojo.Group">
+    insert into GROUP_ (ID_, NAME_, CREATOR_, 
+      CREATEDATE_, AVATOR_)
+    values (#{id,jdbcType=DECIMAL}, #{name,jdbcType=VARCHAR}, #{creator,jdbcType=DECIMAL}, 
+      #{createdate,jdbcType=DECIMAL}, #{avator,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="top.guitoubing.pojo.Group">
+    insert into GROUP_
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID_,
+      </if>
+      <if test="name != null">
+        NAME_,
+      </if>
+      <if test="creator != null">
+        CREATOR_,
+      </if>
+      <if test="createdate != null">
+        CREATEDATE_,
+      </if>
+      <if test="avator != null">
+        AVATOR_,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="creator != null">
+        #{creator,jdbcType=DECIMAL},
+      </if>
+      <if test="createdate != null">
+        #{createdate,jdbcType=DECIMAL},
+      </if>
+      <if test="avator != null">
+        #{avator,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="top.guitoubing.pojo.Group">
+    update GROUP_
+    <set>
+      <if test="name != null">
+        NAME_ = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="creator != null">
+        CREATOR_ = #{creator,jdbcType=DECIMAL},
+      </if>
+      <if test="createdate != null">
+        CREATEDATE_ = #{createdate,jdbcType=DECIMAL},
+      </if>
+      <if test="avator != null">
+        AVATOR_ = #{avator,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="top.guitoubing.pojo.Group">
+    update GROUP_
+    set NAME_ = #{name,jdbcType=VARCHAR},
+      CREATOR_ = #{creator,jdbcType=DECIMAL},
+      CREATEDATE_ = #{createdate,jdbcType=DECIMAL},
+      AVATOR_ = #{avator,jdbcType=VARCHAR}
     where ID_ = #{id,jdbcType=DECIMAL}
   </update>
 </mapper>
