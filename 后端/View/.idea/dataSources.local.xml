@@ -2,7 +2,7 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="how2java@localhost" uuid="195a0312-ba57-42e9-8871-41bd08b45137">
-      <database-info product="MySQL" version="8.0.13" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" family="MYSQL" exact-version="8.0.13">
+      <database-info product="MySQL" version="8.0.13" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>
@@ -12,7 +12,7 @@
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
     <data-source name="Oracle - shangchuang" uuid="cb7cc649-2b5e-4bb8-8abf-566cac55b507">
-      <database-info product="Oracle" version="Oracle Database 12c Standard Edition Release 12.1.0.2.0 - 64bit Production" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0" family="ORACLE" exact-version="12.1.0.2">
+      <database-info product="Oracle" version="Oracle Database 12c Standard Edition Release 12.1.0.2.0 - 64bit Production" jdbc-version="4.0" driver-name="Oracle JDBC driver" driver-version="12.1.0.2.0">
         <extra-name-characters>$#</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
@@ -22,7 +22,7 @@
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
     <data-source name="Person@localhost" uuid="0b1e3f4f-eb09-4159-8257-a1c2e1af02a1">
-      <database-info product="MySQL" version="8.0.13" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )" family="MYSQL" exact-version="8.0.13">
+      <database-info product="MySQL" version="8.0.13" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.46 ( Revision: 9cc87a48e75c2d2e87c1a293b2862ce651cb256e )">
         <extra-name-characters>#@</extra-name-characters>
         <identifier-quote-string>`</identifier-quote-string>
       </database-info>

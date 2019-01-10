@@ -15,4 +15,6 @@ public interface UserInGroupMapper {
     int updateByPrimaryKeySelective(UserInGroup record);
 
     int updateByPrimaryKey(UserInGroup record);
+
+    Integer countUsers(Integer id);
 }

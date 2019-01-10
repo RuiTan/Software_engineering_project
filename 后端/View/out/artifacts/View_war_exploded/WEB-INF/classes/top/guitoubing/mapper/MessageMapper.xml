@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="top.guitoubing.mapper.MessageMapper">
+  <resultMap id="BaseResultMap" type="top.guitoubing.pojo.Message">
+    <constructor>
+      <idArg column="ID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="TYPE_" javaType="java.lang.Short" jdbcType="DECIMAL" />
+      <arg column="DATE_" javaType="java.lang.Long" jdbcType="DECIMAL" />
+      <arg column="ITEMID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+      <arg column="GROUPID_" javaType="java.lang.Integer" jdbcType="DECIMAL" />
+    </constructor>
+  </resultMap>
+  <sql id="Base_Column_List">
+    ID_, TYPE_, DATE_, ITEMID_, GROUPID_
+  </sql>
+  <select id="selectByGroupid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select unique(MESSAGE_.ID_),MESSAGE_.TYPE_,MESSAGE_.DATE_,MESSAGE_.ITEMID_,MESSAGE_.GROUPID_
+    from  MESSAGE_ inner join USERINGROUP_ on MESSAGE_.GROUPID_ = USERINGROUP_.GROUPID_
+    where USERINGROUP_.GROUPID_ = #{id,jdbcType=DECIMAL}
+    ORDER BY MESSAGE_.DATE_
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from MESSAGE_
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from MESSAGE_
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </delete>
+  <insert id="insert" parameterType="top.guitoubing.pojo.Message">
+    insert into MESSAGE_ (ID_, TYPE_, DATE_, 
+      ITEMID_, GROUPID_)
+    values (#{id,jdbcType=DECIMAL}, #{type,jdbcType=DECIMAL}, #{date,jdbcType=DECIMAL}, 
+      #{itemid,jdbcType=DECIMAL}, #{groupid,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="top.guitoubing.pojo.Message">
+    insert into MESSAGE_
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        ID_,
+      </if>
+      <if test="type != null">
+        TYPE_,
+      </if>
+      <if test="date != null">
+        DATE_,
+      </if>
+      <if test="itemid != null">
+        ITEMID_,
+      </if>
+      <if test="groupid != null">
+        GROUPID_,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=DECIMAL},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=DECIMAL},
+      </if>
+      <if test="date != null">
+        #{date,jdbcType=DECIMAL},
+      </if>
+      <if test="itemid != null">
+        #{itemid,jdbcType=DECIMAL},
+      </if>
+      <if test="groupid != null">
+        #{groupid,jdbcType=DECIMAL},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="top.guitoubing.pojo.Message">
+    update MESSAGE_
+    <set>
+      <if test="type != null">
+        TYPE_ = #{type,jdbcType=DECIMAL},
+      </if>
+      <if test="date != null">
+        DATE_ = #{date,jdbcType=DECIMAL},
+      </if>
+      <if test="itemid != null">
+        ITEMID_ = #{itemid,jdbcType=DECIMAL},
+      </if>
+      <if test="groupid != null">
+        GROUPID_ = #{groupid,jdbcType=DECIMAL},
+      </if>
+    </set>
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="top.guitoubing.pojo.Message">
+    update MESSAGE_
+    set TYPE_ = #{type,jdbcType=DECIMAL},
+      DATE_ = #{date,jdbcType=DECIMAL},
+      ITEMID_ = #{itemid,jdbcType=DECIMAL},
+      GROUPID_ = #{groupid,jdbcType=DECIMAL}
+    where ID_ = #{id,jdbcType=DECIMAL}
+  </update>
+</mapper>

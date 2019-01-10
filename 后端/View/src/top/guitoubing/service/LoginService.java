@@ -4,8 +4,9 @@ import top.guitoubing.pojo.User;
 
 public interface LoginService {
 
-    int Login(String tel, String pwd);
+    int login(String tel, String pwd);
 
+    int register(String tel, String pwd);
 
-
+    User getUser(String tel);
 }

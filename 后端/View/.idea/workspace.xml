@@ -2,14 +2,49 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="Dec4LearnSSM:war exploded" />
+      <artifact name="View:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c13f1dfc-9978-4c1d-bfc5-ce4e618b6988" name="Default Changelist" comment="" />
+    <list default="true" id="c13f1dfc-9978-4c1d-bfc5-ce4e618b6988" name="Default Changelist" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/GroupUsersData.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/TaskData.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/TaskService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/inbox.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/js/groupJs.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/task.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/web/task.jsp" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/TaskMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/TaskMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/UserInGroupMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/UserInGroupMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/WEB-INF/classes/top/guitoubing/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/group.jsp" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/group.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/View_war_exploded/notice.jsp" afterPath="$PROJECT_DIR$/out/artifacts/View_war_exploded/notice.jsp" />
+      <change beforePath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/TaskMapper.xml" afterPath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/TaskMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/UserInGroupMapper.xml" afterPath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/UserInGroupMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/out/production/View/top/guitoubing/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.xml" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.xml" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml" afterPath="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/service/NotificationService.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/NotificationService.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/service/impl/NotificationServiceImpl.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/service/impl/NotificationServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java" afterPath="$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java" />
+      <change beforePath="$PROJECT_DIR$/web/group.jsp" afterPath="$PROJECT_DIR$/web/group.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/web/notice.jsp" afterPath="$PROJECT_DIR$/web/notice.jsp" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/MybatisGenerator/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,54 +174,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/GroupTagKey.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/ReplyActivityMapper.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/UserInGroup.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/DemandItem.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/ReplyTaskMapper.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml">
+      <file leaf-file-name="GroupController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+            <state relative-caret-position="397">
+              <caret line="259" column="56" lean-forward="false" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,20 +186,119 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/LoginController.java">
+      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+            <state relative-caret-position="422">
+              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/LoginService.java">
+      <file leaf-file-name="inbox.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/inbox.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MessageData.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/MessageData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="74">
+              <caret line="133" column="13" lean-forward="false" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4092#4093#0" expanded="true" />
+                <element signature="e#4138#4139#0" expanded="true" />
+                <element signature="e#4217#4218#0" expanded="true" />
+                <element signature="e#4273#4274#0" expanded="true" />
+                <element signature="e#4352#4353#0" expanded="true" />
+                <element signature="e#4408#4409#0" expanded="true" />
+                <element signature="e#4991#4992#0" expanded="true" />
+                <element signature="e#5046#5047#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GroupService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="group.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/group.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="335" column="64" lean-forward="false" selection-start-line="335" selection-start-column="54" selection-end-line="335" selection-end-column="64" />
+              <folding>
+                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groupJs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/groupJs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding>
+                <element signature="n#!!block;n#createTask#0" expanded="false" />
+                <element signature="n#!!block;n#editNotif#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="264">
+              <caret line="101" column="31" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -220,20 +311,43 @@
         <option value="spring-beans.schema" />
         <option value="Jsp File" />
         <option value="Interface" />
+        <option value="JavaScript File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>com.how2java.</find>
-      <find>1号线</find>
-      <find>page</find>
-      <find>(ArrayList&lt;SplitReportProbability&gt;) splitReportProbabilities)</find>
-      <find>getScore()</find>
-      <find>data.</find>
-      <find>getCarrige().</find>
-      <find>data.getScores()</find>
+      <find>nb</find>
+      <find>agree</find>
+      <find>func</find>
+      <find>处理</find>
+      <find>进入</find>
+      <find>agree2</find>
+      <find>消息时间线</find>
+      <find>button</find>
+      <find>/search</find>
+      <find>messageda</find>
+      <find>message</find>
+      <find>apply</find>
+      <find>selectGroupByUserIn</find>
+      <find>search..</find>
+      <find>邀请</find>
+      <find>maincon</find>
+      <find>getGroup</find>
+      <find>search</find>
+      <find>option</find>
+      <find>list</find>
+      <find>functio</find>
+      <find>allow</find>
+      <find>swa</find>
+      <find>pusher</find>
+      <find>three</find>
+      <find>notice</find>
+      <find>modal</find>
+      <find>n.</find>
+      <find>575</find>
+      <find>c:choose</find>
     </findStrings>
     <replaceStrings>
       <replace>top.guitoubing.</replace>
@@ -241,62 +355,75 @@
       <replace>data</replace>
       <replace>getScores()</replace>
       <replace>scores</replace>
+      <replace>messageData</replace>
+      <replace>userMapper</replace>
+      <replace>allow</replace>
+      <replace>/search?key=</replace>
+      <replace>t.</replace>
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/listLover.jsp" />
-        <option value="$PROJECT_DIR$/web/upload.jsp" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/UploadedImageFile.java" />
-        <option value="$PROJECT_DIR$/web/showUploadFile.jsp" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/controller/UploadController.java" />
-        <option value="$PROJECT_DIR$/MybatisGenerator/pom.xml" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/util/Page.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/util/MD5Validate.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/UserProfileServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/UserProfileService.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/interceptor/LoginInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/LoginServiceImpl.java" />
         <option value="$PROJECT_DIR$/web/login.jsp" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/DetectionDataService.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/cb7cc649-2b5e-4bb8-8abf-566cac55b507/console.sql" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/TrainService.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TrainMapper.java" />
-        <option value="$PROJECT_DIR$/web/index.html" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/TrainServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TrainMapper.xml" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/util/Train.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
-        <option value="$PROJECT_DIR$/src/springMVC.xml" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/SplitReportProbabilityMapper.xml" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/SplitReportProbabilityMapper.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/SRPService.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/SRPServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/SWService.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/SwMapper.xml" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/SwMapper.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/SwService.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/SwServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/CarrigeMapper.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/CarrigeServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/web/train.jsp" />
-        <option value="$PROJECT_DIR$/web/carrige.jsp" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/DetectionDataMapper.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/CarrigeMapper.xml" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/CarrigeService.java" />
         <option value="$PROJECT_DIR$/MybatisGenerator/src/main/resources/generator.properties" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/MessageMapper.java" />
         <option value="$PROJECT_DIR$/MybatisGenerator/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/src/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/GroupMapper.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/GroupMapper.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/MessageData.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/ProfileService.java" />
+        <option value="$PROJECT_DIR$/web/profile.jsp" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/web/invite.jsp" />
+        <option value="$PROJECT_DIR$/web/js/customjs/custom-modal.js" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TagMapper.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TagMapper.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/ProfileData.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/ProfileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/ApplyData.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/GroupSearchData.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/MessageMapper.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java" />
+        <option value="$PROJECT_DIR$/web/search.jsp" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/util/TimeUtil.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/NotificationMapper.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/NotificationMapper.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/NotificationData.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/NotificationService.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/NotificationServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/notice.jsp" />
+        <option value="$PROJECT_DIR$/web/task.html" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.xml" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/TaskData.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/TaskService.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web/task.jsp" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/pojo/Data/GroupUsersData.java" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java" />
-        <option value="$PROJECT_DIR$/src/top/guitoubing/service/LoginService.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java" />
+        <option value="$PROJECT_DIR$/web/group.jsp" />
+        <option value="$PROJECT_DIR$/web/js/groupJs.js" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
       </list>
     </option>
   </component>
@@ -326,17 +453,28 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="840" />
-    <option name="height" value="976" />
+    <option name="x" value="-7" />
+    <option name="width" value="734" />
+    <option name="height" value="873" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -347,55 +485,6 @@
             <path>
               <item name="View" type="b2602c69:ProjectViewProjectNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="MybatisGenerator" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="View" type="b2602c69:ProjectViewProjectNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="MybatisGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="View" type="b2602c69:ProjectViewProjectNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="MybatisGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="View" type="b2602c69:ProjectViewProjectNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="MybatisGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="View" type="b2602c69:ProjectViewProjectNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="MybatisGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guitoubing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="View" type="b2602c69:ProjectViewProjectNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="MybatisGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="View" type="b2602c69:ProjectViewProjectNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="MybatisGenerator" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="View" type="b2602c69:ProjectViewProjectNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -409,14 +498,7 @@
               <item name="View" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guitoubing" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="View" type="b2602c69:ProjectViewProjectNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guitoubing" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="View" type="b2602c69:ProjectViewProjectNode" />
@@ -431,38 +513,42 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="oracle&#10;mysql" />
-    <property name="SearchEverywhereHistoryKey" value="inte&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/interceptor/LoginInterceptor.java&#10;Contro&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/controller/CategoryController.java&#10;impl&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/service/impl/CategoryServiceImpl.java&#10;Servi&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/service/CategoryService.java&#10;Catego&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/mapper/CategoryMapper.java" />
+    <property name="SearchEverywhereHistoryKey" value="messageda&#9;PSI&#9;JAVA://top.guitoubing.pojo.Data.MessageData&#10;constan&#9;FILE&#9;file://E:/GitHub/Software_engineering_project/后端/View/src/top/guitoubing/util/ConstantDefinition.java&#10;Consta&#9;FILE&#9;file://E:/GitHub/Software_engineering_project/后端/View/src/top/guitoubing/util/ConstantDefinition.java&#10;notice.&#9;FILE&#9;file://E:/GitHub/Software_engineering_project/后端/View/web/notice.jsp&#10;test&#9;FILE&#9;file://E:/GitHub/Software_engineering_project/后端/View/src/top/guitoubing/test/MybatisTest.java&#10;Group&#9;FILE&#9;file://E:/GitHub/Software_engineering_project/后端/View/src/top/guitoubing/pojo/Group.java&#10;inde&#9;FILE&#9;file://E:/GitHub/Software_engineering_project/后端/View/web/index.jsp&#10;tes&#9;FILE&#9;file://E:/GitHub/Software_engineering_project/后端/View/src/top/guitoubing/test/MybatisTest.java&#10;inte&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/interceptor/LoginInterceptor.java&#10;Contro&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/controller/CategoryController.java&#10;impl&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/service/impl/CategoryServiceImpl.java&#10;Servi&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/service/CategoryService.java&#10;Catego&#9;FILE&#9;file:///Users/tanrui/Homework/J2EE/Code/Dec4LearnSSM/src/top/guitoubing/mapper/CategoryMapper.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546960846323" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/homework/软工/期末项目/View" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32567433" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/web/WEB-INF" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="top.guitoubing.pojo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHub\Software_engineering_project\后端\View\web" />
+      <recent name="E:\GitHub\Software_engineering_project\后端\View\src\top\guitoubing\mapper" />
       <recent name="$PROJECT_DIR$/src/top/guitoubing" />
       <recent name="$PROJECT_DIR$/src/top/guitoubing/mapper" />
       <recent name="$PROJECT_DIR$/src/top/guitoubing/pojo" />
-      <recent name="$PROJECT_DIR$/src/top/guitoubing/util" />
-      <recent name="$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="top.guitoubing.pojo" />
+      <recent name="top.guitoubing.util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\GitHub\Software_engineering_project\后端\View\src\top\guitoubing\mapper" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/web/WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -477,20 +563,31 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest">
+  <component name="RunManager" selected="Tomcat Server.Unnamed">
     <configuration name="MybatisTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="View" />
-      <extension name="coverage">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
         <pattern>
           <option name="PATTERN" value="top.guitoubing.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <module name="View" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="top.guitoubing.test" />
       <option name="MAIN_CLASS_NAME" value="top.guitoubing.test.MybatisTest" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration name="MybatisGenerator" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
@@ -505,9 +602,9 @@
               <list>
                 <option value="mybatis-generator:generate" />
                 <option value="-e" />
+                <option value="-X" />
               </list>
             </option>
-            <option name="pomFileName" />
             <option name="profilesMap">
               <map />
             </option>
@@ -516,13 +613,10 @@
           </MavenRunnerParameters>
         </option>
       </MavenSettings>
-      <method v="2" />
     </configuration>
-    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.13" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8081/" />
-      <option name="UPDATING_POLICY" value="restart-server" />
+    <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.37" ALTERNATIVE_JRE_ENABLED="false">
       <deployment>
-        <artifact name="Dec4LearnSSM:war exploded">
+        <artifact name="View:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -537,6 +631,7 @@
       <predefined_log_file id="Tomcat Manager" enabled="false" />
       <predefined_log_file id="Tomcat Host Manager" enabled="false" />
       <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="59797" />
       </RunnerSettings>
@@ -585,23 +680,25 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
+      <method>
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="Dec4LearnSSM:war exploded" />
+          <artifact name="View:war exploded" />
         </option>
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Maven.MybatisGenerator" />
-      <item itemvalue="Tomcat Server.Unnamed" />
-      <item itemvalue="JUnit.MybatisTest" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Maven.MybatisGenerator" />
+      <item index="1" class="java.lang.String" itemvalue="Tomcat Server.Unnamed" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MybatisTest" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.MybatisTest" />
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.MybatisTest" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -627,115 +724,116 @@
       <workItem from="1545721093715" duration="22000" />
       <workItem from="1546065068027" duration="50000" />
       <workItem from="1546947871817" duration="5834000" />
+      <workItem from="1546962684147" duration="84714000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MybatisTest - 2018.12.16 at 23h 15m 41s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 14h 09m 00s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2018.12.16 at 23h 15m 52s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 14h 09m 39s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2018.12.17 at 01h 14m 35s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 14h 13m 00s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2018.12.17 at 01h 16m 58s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 14h 13m 16s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2018.12.17 at 01h 18m 05s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 14h 14m 07s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2018.12.17 at 01h 18m 11s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 15h 55m 23s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.08 at 22h 11m 55s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 15h 55m 32s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.08 at 22h 12m 40s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 16h 57m 58s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.08 at 22h 27m 49s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 17h 33m 55s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest - 2019.01.08 at 22h 28m 06s.xml">
+    <history-entry file="MybatisTest - 2019.01.10 at 19h 33m 59s.xml">
       <configuration name="MybatisTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62491000" />
+    <option name="totallyTimeSpent" value="147205000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="976" extended-state="6" />
+    <frame x="-8" y="-8" width="1456" height="882" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18437119" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3277027" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29524887" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39864865" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3299435" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.3277027" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3299435" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.22171946" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24969475" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.20634921" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297587" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20630373" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35436243" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22147651" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37181208" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18696275" sideWeight="0.4927235" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18696275" sideWeight="0.50727654" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32751676" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3277027" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32967034" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Image Layers" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32918552" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2975113" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39932126" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.3299435" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Database Console" order="9" weight="0.32959184" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.2239819" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Database Changes" order="14" />
-      <window_info anchor="bottom" id="Version Control" order="15" show_stripe_button="false" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Maven Projects" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.24236874" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299435" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24236874" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39932126" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2239819" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2975113" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32959184" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32918552" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -749,380 +847,677 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java</url>
-          <line>23</line>
+          <line>59</line>
           <properties />
-          <option name="timeStamp" value="1" />
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java</url>
-          <line>27</line>
+          <line>55</line>
           <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java</url>
+          <line>67</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java</url>
+          <line>51</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java</url>
+          <line>90</line>
+          <properties />
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
+      <option name="time" value="57" />
     </breakpoint-manager>
+    <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/Remark.java">
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/MessageMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/StaringKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/TagLovedKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/Type.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://DATABASE/cb7cc649-2b5e-4bb8-8abf-566cac55b507.SCHEMA:SHANGCHUANG">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>DATABASE</ID>
-          <OriginalElement>cb7cc649-2b5e-4bb8-8abf-566cac55b507.SCHEMA:SHANGCHUANG</OriginalElement>
-          <nodes>
-            <node x="2.5" y="635.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.SW</node>
-            <node x="577.0" y="0.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.TEST_RESULT</node>
-            <node x="262.0" y="955.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.REPORT</node>
-            <node x="0.0" y="247.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.CARRIGE</node>
-            <node x="310.0" y="0.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.DETECTION_TYPE</node>
-            <node x="524.0" y="944.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.SPLIT_REPORT</node>
-            <node x="0.0" y="944.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.SPLIT_REPORT_PROBABILITY</node>
-            <node x="25.0" y="101.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.TRAIN</node>
-            <node x="264.0" y="124.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.DETECTION_DATA</node>
-            <node x="40.0" y="0.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.LINE</node>
-            <node x="276.5" y="798.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.RELATIVE_DISTANCE_RANGE</node>
-            <node x="811.0" y="798.0">cb7cc649-2b5e-4bb8-8abf-566cac55b507.VIEW:SHANGCHUANG.SEQUENCE_REPORT</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.TRAIN" target="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.LINE">
-              <point x="0.0" y="-48.0" />
-              <point x="0.0" y="25.5" />
-            </edge>
-            <edge source="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.SPLIT_REPORT_PROBABILITY" target="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.RELATIVE_DISTANCE_RANGE">
-              <point x="0.0" y="-47.5" />
-              <point x="121.0" y="919.0" />
-              <point x="312.0" y="919.0" />
-              <point x="-71.0" y="48.0" />
-            </edge>
-            <edge source="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.SW" target="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.CARRIGE">
-              <point x="0.0" y="-59.0" />
-              <point x="0.0" y="169.0" />
-            </edge>
-            <edge source="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.REPORT" target="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.RELATIVE_DISTANCE_RANGE">
-              <point x="0.0" y="-36.5" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.DETECTION_DATA" target="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.DETECTION_TYPE">
-              <point x="0.0" y="-201.5" />
-              <point x="0.0" y="37.0" />
-            </edge>
-            <edge source="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.CARRIGE" target="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.TRAIN">
-              <point x="0.0" y="-169.0" />
-              <point x="0.0" y="48.0" />
-            </edge>
-            <edge source="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.SPLIT_REPORT" target="cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.RELATIVE_DISTANCE_RANGE">
-              <point x="0.0" y="-47.5" />
-              <point x="645.0" y="919.0" />
-              <point x="454.0" y="919.0" />
-              <point x="71.0" y="48.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.6178685117150614" x="484.0" y="687.0" />
-          <SelectedNodes>
-            <node>cb7cc649-2b5e-4bb8-8abf-566cac55b507.TABLE:SHANGCHUANG.LINE</node>
-          </SelectedNodes>
-          <Categories>
-            <Category>Key columns</Category>
-            <Category>Columns</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/Actor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/Comment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/Director.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/Movie.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/MovieTagKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/Tag.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/mapper/ActorPicMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/SwMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="27" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/SwMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/DetectionType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/DetectionDataMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/CarrigeService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/CarrigeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Line.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/CarrigeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="33" />
+        <state relative-caret-position="306">
+          <caret line="18" column="56" lean-forward="false" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
           <folding>
-            <element signature="e#481#482#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
+            <marker date="1547055017630" expanded="true" signature="885:1150" ph="select uniqu... " />
+            <marker date="1547055017630" expanded="true" signature="1262:1367" ph="select from MESSAGE_" />
+            <marker date="1547055017630" expanded="true" signature="1453:1512" ph="delete from MESSAGE_... " />
+            <marker date="1547055017630" expanded="true" signature="1596:1814" ph="insert into MESSAGE_... " />
+            <marker date="1547055017630" expanded="true" signature="2856:3286" ph="update MESSAGE_... " />
+            <marker date="1547055017630" expanded="true" signature="3382:3607" ph="update MESSAGE_... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java">
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/ProfileServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="36" column="28" lean-forward="true" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/CarrigeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/java/top/guitoubing/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="17" column="1" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/resources/generator.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/ReplyActivityKey.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/GroupTaskMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/DemandItemMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/View.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="39" lean-forward="true" selection-start-line="13" selection-start-column="39" selection-end-line="13" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Supervision.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/SuperviseMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/ReplyActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="32" column="1" lean-forward="true" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="54" column="44" selection-start-line="54" selection-start-column="44" selection-end-line="54" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/Long.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="53" column="19" selection-start-line="53" selection-start-column="19" selection-end-line="53" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MybatisGenerator/src/main/resources/generatorConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="150" column="67" selection-start-line="150" selection-start-column="67" selection-end-line="150" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/LikeNotificationMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/ReplyTask.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/UserInGroupKey.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Group.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/GroupTask.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/GroupTagKey.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/ReplyActivityMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/UserInGroup.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/DemandItem.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/ReplyTaskMapper.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="16" lean-forward="true" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="21" column="74" selection-start-line="21" selection-start-column="74" selection-end-line="21" selection-end-column="74" />
+        <state relative-caret-position="260">
+          <caret line="32" column="63" lean-forward="false" selection-start-line="32" selection-start-column="63" selection-end-line="32" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1497#1498#0" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/UserInGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+          <folding>
+            <element signature="e#356#357#0" expanded="false" />
+            <element signature="e#379#380#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        <state relative-caret-position="359">
+          <caret line="38" column="29" lean-forward="false" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/LoginService.java">
+    <entry file="file://$PROJECT_DIR$/web/plugins/sweetalert2/custom-alert.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2244">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/search.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="88" column="50" lean-forward="false" selection-start-line="88" selection-start-column="50" selection-end-line="88" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-306">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/util/CheckUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="26" lean-forward="false" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/plugins/datedropper/datedropper.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="0" column="18673" lean-forward="false" selection-start-line="0" selection-start-column="18673" selection-end-line="0" selection-end-column="18673" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/util/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="28" column="37" lean-forward="false" selection-start-line="28" selection-start-column="37" selection-end-line="28" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/plugins/echarts/echarts.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="13" column="26902" lean-forward="false" selection-start-line="13" selection-start-column="26902" selection-end-line="13" selection-end-column="26902" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/NotificationMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Notification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="11" lean-forward="false" selection-start-line="33" selection-start-column="11" selection-end-line="33" selection-end-column="11" />
+          <folding>
+            <element signature="e#790#791#0" expanded="false" />
+            <element signature="e#813#814#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="12" column="49" lean-forward="true" selection-start-line="12" selection-start-column="49" selection-end-line="13" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/NotificationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="21" column="11" lean-forward="true" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding>
+            <marker date="1547065861170" expanded="true" signature="1226:1260" ph="select max(i... notification_" />
+            <marker date="1547065861170" expanded="true" signature="1372:1482" ph="select from NOTIFICATION_" />
+            <marker date="1547065861170" expanded="true" signature="1568:1632" ph="delete from NOTIFICATION_... " />
+            <marker date="1547065861170" expanded="true" signature="1721:2144" ph="insert into NOTIFICATION_... " />
+            <marker date="1547065861170" expanded="true" signature="3821:4656" ph="update NOTIFICATION_... " />
+            <marker date="1547065861170" expanded="true" signature="4757:5187" ph="update NOTIFICATION_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/LikeNotification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/NotificationData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="60" column="31" lean-forward="false" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
+          <folding>
+            <element signature="e#1646#1647#0" expanded="true" />
+            <element signature="e#1689#1690#0" expanded="true" />
+            <element signature="e#1723#1724#0" expanded="true" />
+            <element signature="e#1753#1754#0" expanded="true" />
+            <element signature="e#1778#1779#0" expanded="true" />
+            <element signature="e#1815#1816#0" expanded="true" />
+            <element signature="e#1843#1844#0" expanded="true" />
+            <element signature="e#1875#1876#0" expanded="true" />
+            <element signature="e#1903#1904#0" expanded="true" />
+            <element signature="e#1945#1946#0" expanded="true" />
+            <element signature="e#1979#1980#0" expanded="true" />
+            <element signature="e#2013#2014#0" expanded="true" />
+            <element signature="e#2043#2044#0" expanded="true" />
+            <element signature="e#2089#2090#0" expanded="true" />
+            <element signature="e#2127#2128#0" expanded="true" />
+            <element signature="e#2162#2163#0" expanded="true" />
+            <element signature="e#2195#2196#0" expanded="true" />
+            <element signature="e#2245#2246#0" expanded="true" />
+            <element signature="e#2289#2290#0" expanded="true" />
+            <element signature="e#2322#2323#0" expanded="true" />
+            <element signature="e#2351#2352#0" expanded="true" />
+            <element signature="e#2395#2396#0" expanded="true" />
+            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#2466#2467#0" expanded="true" />
+            <element signature="e#2496#2497#0" expanded="true" />
+            <element signature="e#2543#2544#0" expanded="true" />
+            <element signature="e#2581#2582#0" expanded="true" />
+            <element signature="e#2616#2617#0" expanded="true" />
+            <element signature="e#2646#2647#0" expanded="true" />
+            <element signature="e#2693#2694#0" expanded="true" />
+            <element signature="e#2731#2732#0" expanded="true" />
+            <element signature="e#2763#2764#0" expanded="true" />
+            <element signature="e#2793#2794#0" expanded="true" />
+            <element signature="e#2837#2838#0" expanded="true" />
+            <element signature="e#2875#2876#0" expanded="true" />
+            <element signature="e#2909#2910#0" expanded="true" />
+            <element signature="e#2940#2941#0" expanded="true" />
+            <element signature="e#2987#2988#0" expanded="true" />
+            <element signature="e#3027#3028#0" expanded="true" />
+            <element signature="e#3058#3059#0" expanded="true" />
+            <element signature="e#3085#3086#0" expanded="true" />
+            <element signature="e#3125#3126#0" expanded="true" />
+            <element signature="e#3157#3158#0" expanded="true" />
+            <element signature="e#3190#3191#0" expanded="true" />
+            <element signature="e#3219#3220#0" expanded="true" />
+            <element signature="e#3263#3264#0" expanded="true" />
+            <element signature="e#3299#3300#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/NotificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/NotificationServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="43" column="60" lean-forward="false" selection-start-line="43" selection-start-column="60" selection-end-line="43" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1235#1236#0" expanded="true" />
+            <element signature="e#1297#1298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/task.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="1141" column="8" lean-forward="false" selection-start-line="1141" selection-start-column="8" selection-end-line="1290" selection-end-column="14" />
+          <folding>
+            <element signature="n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="24" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <marker date="1547112767027" expanded="true" signature="830:901" ph="SELECT count... USERINGROUP_" />
+            <marker date="1547112767027" expanded="true" signature="1030:1196" ph="select from USERINGROUP_" />
+            <marker date="1547112767027" expanded="true" signature="1299:1419" ph="delete from USERINGROUP_... " />
+            <marker date="1547112767027" expanded="true" signature="1507:1714" ph="insert into USERINGROUP_... " />
+            <marker date="1547112767027" expanded="true" signature="2669:2996" ph="update USERINGROUP_... " />
+            <marker date="1547112767027" expanded="true" signature="3096:3306" ph="update USERINGROUP_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserInGroupMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="18" column="33" lean-forward="false" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://A:/JetBrains/Library/ssm/ssm/spring-web-3.2.16.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="137" column="0" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/TaskMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="18" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <marker date="1547113599610" expanded="true" signature="1309:1335" ph="SELECT max(i... TASK_" />
+            <marker date="1547113599610" expanded="true" signature="1447:1549" ph="select from TASK_" />
+            <marker date="1547113599610" expanded="true" signature="1635:1691" ph="delete from TASK_... " />
+            <marker date="1547113599610" expanded="true" signature="1772:2228" ph="insert into TASK_... " />
+            <marker date="1547113599610" expanded="true" signature="4032:4956" ph="update TASK_... " />
+            <marker date="1547113599610" expanded="true" signature="5049:5519" ph="update TASK_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/ProfileService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/ProfileData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="e#949#950#0" expanded="true" />
+            <element signature="e#979#980#0" expanded="true" />
+            <element signature="e#1030#1031#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
+            <element signature="e#1151#1152#0" expanded="true" />
+            <element signature="e#1216#1217#0" expanded="true" />
+            <element signature="e#1262#1263#0" expanded="true" />
+            <element signature="e#1304#1305#0" expanded="true" />
+            <element signature="e#1333#1334#0" expanded="true" />
+            <element signature="e#1386#1387#0" expanded="true" />
+            <element signature="e#1422#1423#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/util/ConstantDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/ReplyTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+          <folding>
+            <element signature="e#332#333#0" expanded="false" />
+            <element signature="e#355#356#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/ReplyTaskKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="12" column="11" lean-forward="false" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          <folding>
+            <element signature="e#267#268#0" expanded="false" />
+            <element signature="e#290#291#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/test/MybatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="74" column="28" lean-forward="false" selection-start-line="74" selection-start-column="28" selection-end-line="74" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/TaskService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="18" column="56" lean-forward="true" selection-start-line="18" selection-start-column="56" selection-end-line="18" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/notice.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="458" column="70" lean-forward="true" selection-start-line="403" selection-start-column="64" selection-end-line="458" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/TaskServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/TaskData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="64" column="24" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/task.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-807">
+          <caret line="621" column="62" lean-forward="true" selection-start-line="621" selection-start-column="62" selection-end-line="621" selection-end-column="62" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/GroupUsersData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="109" column="30" lean-forward="false" selection-start-line="109" selection-start-column="14" selection-end-line="109" selection-end-column="30" />
+          <folding>
+            <marker date="1547122921252" expanded="true" signature="6994:7095" ph="select USER_... USER_" />
+            <marker date="1547122921252" expanded="true" signature="7207:7460" ph="select TASK_... TASK_" />
+            <marker date="1547122921252" expanded="true" signature="7574:7729" ph="select TASK_... TASK_" />
+            <marker date="1547122921252" expanded="true" signature="7841:7996" ph="select TASK_... TASK_" />
+            <marker date="1547122921252" expanded="true" signature="8116:8337" ph="select NOTIF... NOTIFICATION_" />
+            <marker date="1547122921252" expanded="true" signature="8457:8609" ph="select NOTIF... NOTIFICATION_" />
+            <marker date="1547122921252" expanded="true" signature="8712:8987" ph="select USERI... USERINGROUP_" />
+            <marker date="1547122921252" expanded="true" signature="9094:9293" ph="select GROUP... MESSAGE_" />
+            <marker date="1547122921252" expanded="true" signature="9094:9320" ph="select GROUP... MESSAGE_" />
+            <marker date="1547122921252" expanded="true" signature="9428:9547" ph="select count... TASK_" />
+            <marker date="1547122921252" expanded="true" signature="9653:9786" ph="select count... SUPERVISION_" />
+            <marker date="1547122921252" expanded="true" signature="9896:10031" ph="select count... NOTIFICATION_" />
+            <marker date="1547122921252" expanded="true" signature="10134:10189" ph="select * FRO... group_" />
+            <marker date="1547122921252" expanded="true" signature="10296:10522" ph="SELECT group... group_" />
+            <marker date="1547122921252" expanded="true" signature="10296:10549" ph="SELECT group... group_" />
+            <marker date="1547122921252" expanded="true" signature="10669:11048" ph="select uniqu... " />
+            <marker date="1547122921252" expanded="true" signature="11164:11416" ph="select group... GROUP_" />
+            <marker date="1547122921252" expanded="true" signature="11492:11698" ph="select group... group" />
+            <marker date="1547122921252" expanded="true" signature="11492:11699" ph="select uniqu... " />
+            <marker date="1547122921252" expanded="true" signature="11812:12065" ph="SELECT group... group_" />
+            <marker date="1547122921252" expanded="true" signature="12135:12161" ph="select max(I... user_" />
+            <marker date="1547122921252" expanded="true" signature="12237:12264" ph="select max(I... group_" />
+            <marker date="1547122921252" expanded="true" signature="12372:12482" ph="select from USER_" />
+            <marker date="1547122921252" expanded="true" signature="12594:12696" ph="select from USER_" />
+            <marker date="1547122921252" expanded="true" signature="12782:12838" ph="delete from USER_... " />
+            <marker date="1547122921252" expanded="true" signature="12932:13219" ph="insert into GROUP_... " />
+            <marker date="1547122921252" expanded="true" signature="13302:13704" ph="insert into USER_... " />
+            <marker date="1547122921252" expanded="true" signature="15330:16137" ph="update USER_... " />
+            <marker date="1547122921252" expanded="true" signature="16230:16639" ph="update USER_... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="62" column="31" lean-forward="false" selection-start-line="62" selection-start-column="15" selection-end-line="62" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/GroupService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="29" column="42" lean-forward="false" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/service/impl/GroupServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="133" column="13" lean-forward="false" selection-start-line="133" selection-start-column="13" selection-end-line="133" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4092#4093#0" expanded="true" />
+            <element signature="e#4138#4139#0" expanded="true" />
+            <element signature="e#4217#4218#0" expanded="true" />
+            <element signature="e#4273#4274#0" expanded="true" />
+            <element signature="e#4352#4353#0" expanded="true" />
+            <element signature="e#4408#4409#0" expanded="true" />
+            <element signature="e#4991#4992#0" expanded="true" />
+            <element signature="e#5046#5047#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="101" column="31" lean-forward="false" selection-start-line="101" selection-start-column="18" selection-end-line="101" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/top.guitoubing">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>top.guitoubing</OriginalElement>
+          <nodes>
+            <node x="" y="">top.guitoubing.mapper</node>
+            <node x="" y="">top.guitoubing.service</node>
+            <node x="" y="">top.guitoubing.pojo</node>
+            <node x="" y="">top.guitoubing.test</node>
+            <node x="" y="">top.guitoubing.util</node>
+            <node x="" y="">top.guitoubing.controller</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="141.0" y="127.5" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Inner Classes</Category>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+            <Category>Properties</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/GroupController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="259" column="56" lean-forward="false" selection-start-line="259" selection-start-column="56" selection-end-line="259" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/group.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="335" column="64" lean-forward="false" selection-start-line="335" selection-start-column="54" selection-end-line="335" selection-end-column="64" />
+          <folding>
+            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/groupJs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="14" lean-forward="true" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!block;n#createTask#0" expanded="false" />
+            <element signature="n#!!block;n#editNotif#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/controller/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="422">
+          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/inbox.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/top/guitoubing/pojo/Data/MessageData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="27" lean-forward="true" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,13 +1528,13 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="javaee-facet-resources" />
               <type id="library" />
+              <type id="javaee-facet-resources" />
               <type id="artifact" />
               <type id="jpa-descriptors" />
             </show-content>
           </artifact-editor>
-          <last-edited>Dec4LearnSSM:war exploded</last-edited>
+          <last-edited>View:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1164,7 +1559,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>bootstrap</last-edited>
+          <last-edited>lib</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1188,12 +1583,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>MybatisGenerator</last-edited>
+          <last-edited>Spring|View</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.32567433" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
